@@ -59,7 +59,7 @@ export default function Home() {
           desc: '代码可审计，行为可预测，放心用于工作流。'
         }].map((f) => (
           <div key={f.title} className="rounded-xl bg-slate-800/70 border border-slate-700 p-6 shadow hover:shadow-lg hover:border-slate-500 transition">
-            <h3 className="text-xl font-semibold">{f.title}</h3>
+            <h2 className="text-xl font-semibold">{f.title}</h2>
             <p className="text-slate-400 mt-2">{f.desc}</p>
           </div>
         ))}
