@@ -1,0 +1,23 @@
+{
+  "name": "developer-tools-workspace",
+  "version": "1.0.0",
+  "description": "A comprehensive collection of developer tools - merged and optimized",
+  "private": true,
+  "scripts": {
+    "dev": "cd merged-tools && npm run dev",
+    "build": "cd merged-tools && npm run build",
+    "preview": "cd merged-tools && npm run preview",
+    "lint": "cd merged-tools && npm run lint"
+  },
+  "keywords": [
+    "developer-tools",
+    "utilities",
+    "converters",
+    "encoders"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "pnpm": "^10.18.3"
+  }
+}

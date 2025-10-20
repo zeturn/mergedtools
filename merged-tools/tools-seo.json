@@ -1,0 +1,2496 @@
+[
+  {
+    "id": "aes-rsa",
+    "name": "AES/RSA 加密示例",
+    "desc": "AES/RSA 加密示例 是一个在线工具，用于加密/安全。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "aes",
+      "rsa",
+      "加密示例",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "age",
+    "name": "年龄计算器",
+    "desc": "年龄计算器：在浏览器中比较 Date 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "年龄计算器",
+      "age",
+      "date"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "arithmetic-sequence",
+    "name": "等差数列生成",
+    "desc": "等差数列生成：在浏览器中转换 Number 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "等差数列生成",
+      "arithmetic",
+      "sequence",
+      "number"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "ascii-art",
+    "name": "ASCII Art / FIGlet",
+    "desc": "ASCII Art / FIGlet 是一个在线工具，用于Text。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "ascii",
+      "art",
+      "figlet",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "audio",
+    "name": "音频可视化/导出 WAV",
+    "desc": "音频可视化/导出 WAV：在浏览器中分析 音频/媒体 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "音频可视化",
+      "导出",
+      "wav",
+      "audio",
+      "音频/媒体"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "barcode",
+    "name": "条形码生成",
+    "desc": "条形码生成：在浏览器中转换 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "条形码生成",
+      "barcode"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "barcode-batch",
+    "name": "条形码批量生成",
+    "desc": "批量生成 Code128/EAN13 条形码，支持一键下载多张 PNG",
+    "keywords": [
+      "条形码批量生成",
+      "barcode",
+      "batch",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base-convert",
+    "name": "进制转换",
+    "desc": "进制转换：在浏览器中比较 代码/文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "进制转换",
+      "base",
+      "convert",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base32",
+    "name": "Base32 编解码",
+    "desc": "Base32 编解码 是一个在线工具，用于常见格式与数据处理。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "base32",
+      "编解码"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base45",
+    "name": "Base45 编解码",
+    "desc": "Base45 编解码 是一个在线工具，用于Encoding。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "base45",
+      "编解码",
+      "encoding"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base58",
+    "name": "Base58 批处理",
+    "desc": "Base58 批处理 是一个在线工具，用于Encoding。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "base58",
+      "批处理",
+      "encoding"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base62",
+    "name": "Base62 编解码",
+    "desc": "Base62 编解码 是一个在线工具，用于常见格式与数据处理。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "base62",
+      "编解码"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base64",
+    "name": "Base64 编解码",
+    "desc": "Base64 编解码：在浏览器内对文本或文件进行 Base64 编码与解码，快速便捷。",
+    "keywords": [
+      "base64",
+      "编解码"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base64-file",
+    "name": "Base64 文件转换",
+    "desc": "Base64 文件转换：在浏览器内对文本或文件进行 Base64 编码与解码，快速便捷。",
+    "keywords": [
+      "base64",
+      "文件转换",
+      "file",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "base85",
+    "name": "Base85 (Ascii85/Z85)",
+    "desc": "Base85 (Ascii85/Z85) 是一个在线工具，用于Encoding。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "base85",
+      "(ascii85",
+      "z85)",
+      "encoding"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "basic-auth",
+    "name": "Basic Auth 生成器",
+    "desc": "Basic Auth 生成器 是一个在线工具，用于Web。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "basic",
+      "auth",
+      "生成器",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "bcrypt",
+    "name": "Bcrypt 哈希/校验",
+    "desc": "Bcrypt 哈希/校验 是一个在线工具，用于加密/安全。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "bcrypt",
+      "哈希",
+      "校验",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "benchmark",
+    "name": "Benchmark 构建器",
+    "desc": "Benchmark 构建器 是一个在线工具，用于Dev。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "benchmark",
+      "构建器",
+      "dev"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "binary-encodings",
+    "name": "BSON / MsgPack 编解码",
+    "desc": "BSON / MsgPack 编解码 是一个在线工具，用于开发。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "bson",
+      "msgpack",
+      "编解码",
+      "binary",
+      "encodings",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "bip39",
+    "name": "BIP39 助记词",
+    "desc": "BIP39 助记词 是一个在线工具，用于加密/安全。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "bip39",
+      "助记词",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "bytes",
+    "name": "字节单位换算",
+    "desc": "字节单位换算：在浏览器中比较 数据 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "字节单位换算",
+      "bytes",
+      "数据"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "calibre-convert",
+    "name": "Calibre 电子书转换",
+    "desc": "Calibre 电子书转换 是一个在线工具，用于Document。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "calibre",
+      "电子书转换",
+      "convert",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "camera-recorder",
+    "name": "相机录制",
+    "desc": "相机录制：在浏览器中格式化 多媒体、Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "相机录制",
+      "camera",
+      "recorder",
+      "多媒体",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "change-csv-separator",
+    "name": "CSV 分隔符转换",
+    "desc": "CSV 分隔符转换：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "分隔符转换",
+      "change",
+      "separator"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "check-leap-years",
+    "name": "闰年判断",
+    "desc": "闰年判断：在浏览器中生成 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "闰年判断",
+      "check",
+      "leap",
+      "years",
+      "time"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "chmod",
+    "name": "chmod 权限转换",
+    "desc": "chmod 权限转换 是一个在线工具，用于系统/权限。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "chmod",
+      "权限转换",
+      "系统/权限"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "chronometer",
+    "name": "秒表 / 计时器",
+    "desc": "秒表 / 计时器：在浏览器中转换 Productivity 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "秒表",
+      "计时器",
+      "chronometer",
+      "productivity"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "color",
+    "name": "颜色转换",
+    "desc": "颜色转换：在浏览器中比较 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "颜色转换",
+      "color"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "color-convert",
+    "name": "颜色格式转换",
+    "desc": "颜色格式转换：在浏览器中转换 图像/颜色 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "颜色格式转换",
+      "color",
+      "convert",
+      "图像/颜色"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "convert-days-to-hours",
+    "name": "天 → 小时",
+    "desc": "天 → 小时：在浏览器中校验 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "天",
+      "→",
+      "小时",
+      "convert",
+      "days",
+      "to",
+      "hours",
+      "time"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "convert-hours-to-days",
+    "name": "小时 → 天",
+    "desc": "小时 → 天：在浏览器中分析 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "小时",
+      "→",
+      "天",
+      "convert",
+      "hours",
+      "to",
+      "days",
+      "time"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "convert-seconds-to-time",
+    "name": "秒 → 时分秒",
+    "desc": "秒 → 时分秒：在浏览器中分析 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "秒",
+      "→",
+      "时分秒",
+      "convert",
+      "seconds",
+      "to",
+      "time"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "convert-time-to-seconds",
+    "name": "时分秒 → 秒",
+    "desc": "时分秒 → 秒：在浏览器中生成 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "时分秒",
+      "→",
+      "秒",
+      "convert",
+      "time",
+      "to",
+      "seconds"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "convert-unix-to-date",
+    "name": "Unix 时间戳 → 日期",
+    "desc": "Unix 时间戳 → 日期：在浏览器中比较 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "unix",
+      "时间戳",
+      "→",
+      "日期",
+      "convert",
+      "to",
+      "date",
+      "time"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "countdown",
+    "name": "倒计时",
+    "desc": "倒计时：在浏览器中生成 Productivity、Date 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "倒计时",
+      "countdown",
+      "productivity",
+      "date"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "cron",
+    "name": "Cron 解析",
+    "desc": "Cron 解析 是一个在线工具，用于常见格式与数据处理。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "cron",
+      "解析"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "cron-builder",
+    "name": "Cron 可视化编辑器",
+    "desc": "Cron 可视化编辑器 是一个在线工具，用于时间/计划。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "cron",
+      "可视化编辑器",
+      "builder",
+      "时间/计划"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "csv-json",
+    "name": "CSV ⇄ JSON",
+    "desc": "CSV ⇄ JSON：快速格式化、校验与查看 JSON 数据，支持粘贴与文件导入，方便调试与分析。",
+    "keywords": [
+      "csv",
+      "⇄",
+      "json"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "csv-pivot",
+    "name": "CSV 透视表",
+    "desc": "CSV 透视表：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "透视表",
+      "pivot",
+      "数据/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "csv-to-tsv",
+    "name": "CSV → TSV",
+    "desc": "CSV → TSV：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "→",
+      "tsv",
+      "to"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "csv-to-xml",
+    "name": "CSV → XML",
+    "desc": "CSV → XML：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "→",
+      "xml",
+      "to"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "csv-to-yaml",
+    "name": "CSV → YAML",
+    "desc": "CSV → YAML：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "→",
+      "yaml",
+      "to"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "currency",
+    "name": "货币换算（离线汇率）",
+    "desc": "货币换算（离线汇率）：在浏览器中格式化 数据/文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "货币换算（离线汇率）",
+      "currency",
+      "数据/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "dasel",
+    "name": "dasel 数据抽取",
+    "desc": "dasel 数据抽取 是一个在线工具，用于Document。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "dasel",
+      "数据抽取",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "date-diff",
+    "name": "日期差计算",
+    "desc": "日期差计算：在浏览器中格式化 时间/计划 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "日期差计算",
+      "date",
+      "diff",
+      "时间/计划"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "date-time-converter",
+    "name": "日期时间一站式转换",
+    "desc": "日期时间一站式转换：在浏览器中转换 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "日期时间一站式转换",
+      "date",
+      "time",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "device-info",
+    "name": "设备信息",
+    "desc": "设备信息：在浏览器中比较 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "设备信息",
+      "device",
+      "info",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "docker-run-compose",
+    "name": "Docker run → Compose",
+    "desc": "Docker run → Compose 是一个在线工具，用于开发。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "docker",
+      "run",
+      "→",
+      "compose",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "dvisvgm",
+    "name": "dvisvgm 矢量化",
+    "desc": "dvisvgm 矢量化 是一个在线工具，用于Document。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "dvisvgm",
+      "矢量化",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "email-normalizer",
+    "name": "Email 规整化",
+    "desc": "Email 规整化 是一个在线工具，用于开发。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "email",
+      "规整化",
+      "normalizer",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "emoji-picker",
+    "name": "Emoji 选择器",
+    "desc": "Emoji 选择器 是一个在线工具，用于Text、Productivity。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "emoji",
+      "选择器",
+      "picker",
+      "text",
+      "productivity"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "escape-json",
+    "name": "JSON 转义/反转义",
+    "desc": "JSON 转义/反转义：在浏览器中校验 JSON 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "转义",
+      "反转义",
+      "escape"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "eta",
+    "name": "ETA 估算",
+    "desc": "ETA 估算 是一个在线工具，用于Math、Productivity。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "eta",
+      "估算",
+      "math",
+      "productivity"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "exif",
+    "name": "EXIF 元数据读取",
+    "desc": "EXIF 元数据读取 是一个在线工具，用于图像/文件。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "exif",
+      "元数据读取",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "exif-batch",
+    "name": "EXIF 批量查看/剥离",
+    "desc": "EXIF 批量查看/剥离 是一个在线工具，用于图像/文件。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "exif",
+      "批量查看",
+      "剥离",
+      "batch",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "exif-sanitize",
+    "name": "EXIF 去敏/写入",
+    "desc": "EXIF 去敏/写入 是一个在线工具，用于图像/文件。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "exif",
+      "去敏",
+      "写入",
+      "sanitize",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "extract-substring",
+    "name": "子串提取",
+    "desc": "子串提取：在浏览器中校验 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "子串提取",
+      "extract",
+      "substring",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "favicon",
+    "name": "Favicon/ICO 生成",
+    "desc": "Favicon/ICO 生成 是一个在线工具，用于图像/文件。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "favicon",
+      "ico",
+      "生成",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "file-hash",
+    "name": "文件哈希",
+    "desc": "文件哈希：在浏览器中校验 文件/校验 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "文件哈希",
+      "file",
+      "hash",
+      "文件/校验"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "find-incomplete-csv-records",
+    "name": "查找不完整 CSV 记录",
+    "desc": "查找不完整 CSV 记录：在浏览器中分析 CSV 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "查找不完整",
+      "csv",
+      "记录",
+      "find",
+      "incomplete",
+      "records"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "float-ieee754",
+    "name": "进制浮点解析 · IEEE754",
+    "desc": "解析任意进制小数并转换为 IEEE754（32/64 位）与反向转换",
+    "keywords": [
+      "进制浮点解析",
+      "·",
+      "ieee754",
+      "float",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "generic-calc",
+    "name": "通用计算器",
+    "desc": "通用计算器：在浏览器中校验 Number 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "通用计算器",
+      "generic",
+      "calc",
+      "number"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "git-cheatsheet",
+    "name": "Git 速查表",
+    "desc": "Git 速查表 是一个在线工具，用于开发。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "git",
+      "速查表",
+      "cheatsheet",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "graphicsmagick",
+    "name": "GraphicsMagick 转换",
+    "desc": "GraphicsMagick 转换 是一个在线工具，用于Image。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "graphicsmagick",
+      "转换",
+      "image"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "hash",
+    "name": "SHA-256 散列",
+    "desc": "SHA-256 散列：在浏览器中校验 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "sha",
+      "256",
+      "散列",
+      "hash"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "hash-extra",
+    "name": "MD5 / HMAC-SHA256",
+    "desc": "MD5 / HMAC-SHA256：在浏览器中格式化 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "md5",
+      "hmac",
+      "sha256",
+      "hash",
+      "extra"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "hash-text",
+    "name": "Hash 文本",
+    "desc": "Hash 文本：生成与校验各种哈希（MD5/SHA），用于完整性校验与快速验证。",
+    "keywords": [
+      "hash",
+      "文本",
+      "text",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "hex-dump",
+    "name": "Hex Dump 查看器",
+    "desc": "Hex Dump 查看器 是一个在线工具，用于Binary。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "hex",
+      "dump",
+      "查看器",
+      "binary"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "hmac",
+    "name": "HMAC 生成器",
+    "desc": "HMAC 生成器 是一个在线工具，用于加密/安全。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "hmac",
+      "生成器",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "html-entities",
+    "name": "HTML 实体编解码",
+    "desc": "HTML 实体编解码 是一个在线工具，用于常见格式与数据处理。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "html",
+      "实体编解码",
+      "entities"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "html-to-markdown",
+    "name": "HTML → Markdown",
+    "desc": "HTML → Markdown 是一个在线工具，用于文本。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "html",
+      "→",
+      "markdown",
+      "to",
+      "文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "http-status",
+    "name": "HTTP Status Codes",
+    "desc": "HTTP Status Codes 是一个在线工具，用于Web。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "http",
+      "status",
+      "codes",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "iban",
+    "name": "IBAN 校验/解析",
+    "desc": "IBAN 校验/解析 是一个在线工具，用于数据。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "iban",
+      "校验",
+      "解析",
+      "数据"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "ics-event",
+    "name": "ICS 事件生成",
+    "desc": "ICS 事件生成 是一个在线工具，用于Date、Productivity。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "ics",
+      "事件生成",
+      "event",
+      "date",
+      "productivity"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "image-compress",
+    "name": "图片压缩",
+    "desc": "图片压缩：在浏览器中格式化 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "图片压缩",
+      "image",
+      "compress",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "image-convert",
+    "name": "图片转换/压缩",
+    "desc": "图片转换/压缩：在浏览器中校验 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "图片转换",
+      "压缩",
+      "image",
+      "convert",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "image-crop",
+    "name": "图片裁剪",
+    "desc": "图片裁剪：在浏览器中转换 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "图片裁剪",
+      "image",
+      "crop",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "image-resize",
+    "name": "图片缩放压缩",
+    "desc": "图片缩放压缩：在浏览器中校验 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "图片缩放压缩",
+      "image",
+      "resize",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "image-watermark",
+    "name": "图片加水印/滤镜",
+    "desc": "在图片上添加文字或图片水印，并应用亮度/对比度/灰度/模糊/反相等简单滤镜（纯前端）",
+    "keywords": [
+      "图片加水印",
+      "滤镜",
+      "image",
+      "watermark"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "imagemagick",
+    "name": "ImageMagick 转换",
+    "desc": "ImageMagick 转换：在浏览器中比较 Image 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "imagemagick",
+      "转换",
+      "image"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape 矢量处理",
+    "desc": "Inkscape 矢量处理：在浏览器中格式化 Vector 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "inkscape",
+      "矢量处理",
+      "vector"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "insert-csv-columns",
+    "name": "CSV 插入列",
+    "desc": "CSV 插入列：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "插入列",
+      "insert",
+      "columns"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "ipv4-tools",
+    "name": "IPv4 工具集",
+    "desc": "IPv4 工具集：在浏览器中校验 网络 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "ipv4",
+      "工具集",
+      "tools",
+      "网络"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "ipv6-ula",
+    "name": "IPv6 ULA 生成",
+    "desc": "IPv6 ULA 生成：在浏览器中生成 网络 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "ipv6",
+      "ula",
+      "生成",
+      "网络"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-csv",
+    "name": "JSON → CSV",
+    "desc": "JSON → CSV：在浏览器中格式化 数据 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "→",
+      "csv",
+      "数据"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-diff",
+    "name": "JSON Diff 对比",
+    "desc": "JSON Diff 对比：在浏览器中比较 代码/文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "diff",
+      "对比",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-format",
+    "name": "JSON 格式化/压缩",
+    "desc": "JSON 格式化/压缩：在浏览器中分析 Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "格式化",
+      "压缩",
+      "format",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-minify",
+    "name": "JSON Minify",
+    "desc": "JSON Minify：在浏览器中分析 代码/文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "minify",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-schema",
+    "name": "JSON Schema 校验",
+    "desc": "JSON Schema 校验：在浏览器中校验 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "schema",
+      "校验"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-stringify",
+    "name": "JSON 字符串化",
+    "desc": "JSON 字符串化：在浏览器中转换 JSON 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "字符串化",
+      "stringify"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-to-toml",
+    "name": "JSON → TOML",
+    "desc": "JSON → TOML：在浏览器中格式化 JSON、TOML、Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "→",
+      "toml",
+      "to",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-to-xml",
+    "name": "JSON → XML",
+    "desc": "JSON → XML：在浏览器中转换 JSON、XML、Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "→",
+      "xml",
+      "to",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-to-yaml",
+    "name": "JSON → YAML",
+    "desc": "JSON → YAML：在浏览器中分析 JSON、YAML、Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "→",
+      "yaml",
+      "to",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "json-viewer",
+    "name": "JSON 查看器",
+    "desc": "JSON 查看器：在浏览器中校验 JSON 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "查看器",
+      "viewer"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "jsonpath",
+    "name": "JSONPath 提取",
+    "desc": "JSONPath 提取：在浏览器中比较 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "jsonpath",
+      "提取"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "jwt-decode",
+    "name": "JWT 解码器",
+    "desc": "JWT 解码器：在浏览器中比较 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "jwt",
+      "解码器",
+      "decode",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "jwt-verify",
+    "name": "JWT 签名校验",
+    "desc": "JWT 签名校验：在浏览器中转换 安全/加密 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "jwt",
+      "签名校验",
+      "verify",
+      "安全/加密"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "keycode",
+    "name": "Keycode 信息",
+    "desc": "捕获键盘事件，显示 key/code/keyCode 等字段",
+    "keywords": [
+      "keycode",
+      "信息",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "libheif",
+    "name": "HEIF/HEIC (libheif)",
+    "desc": "HEIF/HEIC (libheif) 是一个在线工具，用于Image。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "heif",
+      "heic",
+      "(libheif)",
+      "libheif",
+      "image"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "libjxl",
+    "name": "JPEG XL (libjxl)",
+    "desc": "JPEG XL (libjxl)：在浏览器中分析 Image 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "jpeg",
+      "xl",
+      "(libjxl)",
+      "libjxl",
+      "image"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "libreoffice-convert",
+    "name": "LibreOffice 文档转换",
+    "desc": "DOC/DOCX/XLS/PPT ↔ PDF/等（占位：生成命令）",
+    "keywords": [
+      "libreoffice",
+      "文档转换",
+      "convert",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-converter",
+    "name": "列表转换",
+    "desc": "列表转换：在浏览器中转换 文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表转换",
+      "list",
+      "converter",
+      "文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-duplicate",
+    "name": "列表复制/交织",
+    "desc": "列表复制/交织：在浏览器中分析 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表复制",
+      "交织",
+      "list",
+      "duplicate"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-find-most-popular",
+    "name": "列表最常见项",
+    "desc": "列表最常见项：在浏览器中生成 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表最常见项",
+      "list",
+      "find",
+      "most",
+      "popular"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-find-unique",
+    "name": "列表唯一项",
+    "desc": "列表唯一项：在浏览器中格式化 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表唯一项",
+      "list",
+      "find",
+      "unique"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-group",
+    "name": "列表分组",
+    "desc": "列表分组：在浏览器中比较 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表分组",
+      "list",
+      "group"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-reverse",
+    "name": "列表反转",
+    "desc": "列表反转：在浏览器中分析 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表反转",
+      "list",
+      "reverse"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-rotate",
+    "name": "列表旋转位移",
+    "desc": "列表旋转位移：在浏览器中生成 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表旋转位移",
+      "list",
+      "rotate"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-shuffle",
+    "name": "列表乱序",
+    "desc": "列表乱序：在浏览器中分析 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表乱序",
+      "list",
+      "shuffle"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-sort",
+    "name": "列表排序",
+    "desc": "列表排序：在浏览器中转换 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表排序",
+      "list",
+      "sort"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-truncate",
+    "name": "列表截断",
+    "desc": "列表截断：在浏览器中分析 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表截断",
+      "list",
+      "truncate"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-unwrap",
+    "name": "列表拆包",
+    "desc": "列表拆包：在浏览器中比较 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表拆包",
+      "list",
+      "unwrap"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "list-wrap",
+    "name": "列表包裹",
+    "desc": "列表包裹：在浏览器中生成 List 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "列表包裹",
+      "list",
+      "wrap"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "lorem",
+    "name": "Lorem Ipsum 生成",
+    "desc": "Lorem Ipsum 生成：在浏览器中比较 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "lorem",
+      "ipsum",
+      "生成",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "mac-gen",
+    "name": "MAC 地址生成器",
+    "desc": "MAC 地址生成器：在浏览器中校验 网络 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "mac",
+      "地址生成器",
+      "gen",
+      "网络"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "mac-oui",
+    "name": "MAC OUI 查询",
+    "desc": "通过 MAC 地址前缀查询制造商（支持离线数据与自定义导入）",
+    "keywords": [
+      "mac",
+      "oui",
+      "查询",
+      "network"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "markdown",
+    "name": "Markdown → HTML",
+    "desc": "使用 snarkdown 将 Markdown 渲染为 HTML（不含消毒）",
+    "keywords": [
+      "markdown",
+      "→",
+      "html",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "markdown-editor",
+    "name": "Markdown 富文本编辑器",
+    "desc": "支持代码与所见即所得双模式（基于 Toast UI Editor）",
+    "keywords": [
+      "markdown",
+      "富文本编辑器",
+      "editor",
+      "文本",
+      "wysiwyg"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "markdown-table",
+    "name": "Markdown 表格编辑器",
+    "desc": "Markdown 表格编辑器：在浏览器中格式化 Markdown、Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "markdown",
+      "表格编辑器",
+      "table",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "markdown-to-html",
+    "name": "Markdown → HTML",
+    "desc": "Markdown → HTML：在浏览器中格式化 Markdown、HTML 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "markdown",
+      "→",
+      "html",
+      "to"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "markdown-toc",
+    "name": "Markdown TOC 生成器",
+    "desc": "根据 Markdown 标题生成目录（TOC），支持 复制 与 粘贴到文档",
+    "keywords": [
+      "markdown",
+      "toc",
+      "生成器",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "math-eval",
+    "name": "数学表达式计算",
+    "desc": "数学表达式计算：在浏览器中格式化 Math 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "数学表达式计算",
+      "math",
+      "eval"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "meta-tag-generator",
+    "name": "Meta 标签生成器",
+    "desc": "生成常用 SEO 与社交分享的 <meta> 与 <link> 片段",
+    "keywords": [
+      "meta",
+      "标签生成器",
+      "tag",
+      "generator",
+      "html",
+      "seo"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "mime-types",
+    "name": "MIME Types",
+    "desc": "MIME Types：在浏览器中校验 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "mime",
+      "types",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "minify",
+    "name": "HTML/CSS/JS 压缩",
+    "desc": "HTML/CSS/JS 压缩 是一个在线工具，用于代码/文本。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "html",
+      "css",
+      "js",
+      "压缩",
+      "minify",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "morse",
+    "name": "摩斯电码",
+    "desc": "摩斯电码：在浏览器中分析 Text、Audio 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "摩斯电码",
+      "morse",
+      "text",
+      "audio"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "msgconvert",
+    "name": "msgconvert 邮件转换",
+    "desc": "msgconvert 邮件转换：在浏览器中生成 Document 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "msgconvert",
+      "邮件转换",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "nanoid",
+    "name": "NanoID 生成器",
+    "desc": "NanoID 生成器：在浏览器中格式化 加密/安全 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "nanoid",
+      "生成器",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "nato",
+    "name": "NATO 拼读表",
+    "desc": "文本 → NATO 字母拼读（Alpha, Bravo, ...）",
+    "keywords": [
+      "nato",
+      "拼读表",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "numeronym",
+    "name": "Numeronym 生成",
+    "desc": "Numeronym 生成：在浏览器中比较 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "numeronym",
+      "生成",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "og-meta",
+    "name": "Open Graph 元信息生成",
+    "desc": "Open Graph 元信息生成：在浏览器中生成 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "open",
+      "graph",
+      "元信息生成",
+      "og",
+      "meta",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "otp",
+    "name": "OTP/TOTP 生成器",
+    "desc": "基于 Base32 密钥的 TOTP/HOTP（HMAC-SHA1）",
+    "keywords": [
+      "otp",
+      "totp",
+      "生成器",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "palette",
+    "name": "颜色调色板生成",
+    "desc": "颜色调色板生成：在浏览器中格式化 设计 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "颜色调色板生成",
+      "palette",
+      "设计"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "pandoc-convert",
+    "name": "Pandoc 多格式转换",
+    "desc": "Markdown ↔ Docx/Odt/Rtf/Html/Epub/...（占位：生成命令）",
+    "keywords": [
+      "pandoc",
+      "多格式转换",
+      "convert",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "password",
+    "name": "密码生成器",
+    "desc": "密码生成器：在浏览器中转换 加密/安全 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "密码生成器",
+      "password",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "password-strength",
+    "name": "密码强度分析",
+    "desc": "密码强度分析：在浏览器中校验 加密/安全 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "密码强度分析",
+      "password",
+      "strength",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "pbkdf2",
+    "name": "PBKDF2 派生器",
+    "desc": "PBKDF2 派生器：在浏览器中分析 加密/安全 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "pbkdf2",
+      "派生器",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "pdf-merge",
+    "name": "PDF 合并",
+    "desc": "PDF 合并：在浏览器中校验 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "pdf",
+      "合并",
+      "merge",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "pdf-sign",
+    "name": "PDF 签名检查",
+    "desc": "检测 PDF 中的 ByteRange/Contents（非完整证书验证）",
+    "keywords": [
+      "pdf",
+      "签名检查",
+      "sign",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "pdf-signature-checker",
+    "name": "PDF 签名校验(前端)",
+    "desc": "在前端尝试检测 PDF 是否包含签名域与相关对象(能力有限)",
+    "keywords": [
+      "pdf",
+      "签名校验(前端)",
+      "signature",
+      "checker"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "percentage",
+    "name": "百分比计算",
+    "desc": "百分比计算：在浏览器中格式化 Math 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "百分比计算",
+      "percentage",
+      "math"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "phone",
+    "name": "手机号解析与格式化",
+    "desc": "基础的国际电话号码解析：清理、E.164 格式、国家识别与简单拼接（无依赖）",
+    "keywords": [
+      "手机号解析与格式化",
+      "phone",
+      "data"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "potrace",
+    "name": "potrace 矢量化",
+    "desc": "potrace 矢量化：在浏览器中分析 Vector 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "potrace",
+      "矢量化",
+      "vector"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "punycode",
+    "name": "Punycode 域名",
+    "desc": "Unicode 域名与 Punycode (xn--) 互转，按 label 处理",
+    "keywords": [
+      "punycode",
+      "域名",
+      "web",
+      "encoding"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "qr-batch",
+    "name": "二维码 批量生成/解码",
+    "desc": "二维码 批量生成/解码：在浏览器中格式化 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "二维码",
+      "批量生成",
+      "解码",
+      "qr",
+      "batch",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "qr-decode",
+    "name": "二维码识别",
+    "desc": "二维码识别：在浏览器中转换 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "二维码识别",
+      "qr",
+      "decode"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "qrcode",
+    "name": "二维码生成器",
+    "desc": "二维码生成器：在浏览器中校验 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "二维码生成器",
+      "qrcode"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "random-number-generator",
+    "name": "随机数生成器",
+    "desc": "随机数生成器：在浏览器中格式化 Math 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "随机数生成器",
+      "random",
+      "number",
+      "generator",
+      "math"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "random-port",
+    "name": "随机端口",
+    "desc": "随机端口：在浏览器中转换 开发 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "随机端口",
+      "random",
+      "port",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "randomize-case",
+    "name": "随机大小写",
+    "desc": "随机大小写：在浏览器中格式化 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "随机大小写",
+      "randomize",
+      "case",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "regex-cheatsheet",
+    "name": "正则表达式速查",
+    "desc": "正则表达式速查：在浏览器中生成 开发 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "正则表达式速查",
+      "regex",
+      "cheatsheet",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "regex-replace",
+    "name": "正则替换",
+    "desc": "正则替换：在浏览器中格式化 代码/文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "正则替换",
+      "regex",
+      "replace",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "regex-tester",
+    "name": "正则测试器",
+    "desc": "正则测试器：在浏览器中格式化 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "正则测试器",
+      "regex",
+      "tester",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "repeat",
+    "name": "文本重复",
+    "desc": "文本重复：在浏览器中格式化 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "文本重复",
+      "repeat",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "resvg",
+    "name": "resvg 渲染",
+    "desc": "resvg 渲染：在浏览器中转换 Vector 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "resvg",
+      "渲染",
+      "vector"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "reverse",
+    "name": "文本反转",
+    "desc": "文本反转：在浏览器中生成 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "文本反转",
+      "reverse",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "roman",
+    "name": "罗马数字转换",
+    "desc": "罗马数字转换：在浏览器中比较 代码/文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "罗马数字转换",
+      "roman",
+      "代码/文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "rot13",
+    "name": "ROT13 编码/解码",
+    "desc": "ROT13 编码/解码：在浏览器中生成 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "rot13",
+      "编码",
+      "解码",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "rsa-keys",
+    "name": "RSA 密钥对生成",
+    "desc": "生成 RSA 密钥对并导出 PEM (SPKI/PKCS#8)",
+    "keywords": [
+      "rsa",
+      "密钥对生成",
+      "keys",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "safelink",
+    "name": "Outlook Safelink 解码",
+    "desc": "从 safelinks.protection.outlook.com 还原原始 URL",
+    "keywords": [
+      "outlook",
+      "safelink",
+      "解码",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "slugify",
+    "name": "Slug 生成器",
+    "desc": "将标题/文本转为 URL 友好的短链（支持大小写/分隔符配置）",
+    "keywords": [
+      "slug",
+      "生成器",
+      "slugify",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "sprite",
+    "name": "图像雪碧图生成",
+    "desc": "多图合成到单张 Spritesheet，导出 PNG 与坐标 JSON",
+    "keywords": [
+      "图像雪碧图生成",
+      "sprite",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "sql-format",
+    "name": "SQL 格式化",
+    "desc": "SQL 格式化：在浏览器中格式化 开发 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "sql",
+      "格式化",
+      "format",
+      "开发"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "string-obfuscator",
+    "name": "字符串混淆",
+    "desc": "字符串混淆：在浏览器中格式化 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "字符串混淆",
+      "string",
+      "obfuscator",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "sum",
+    "name": "数值求和",
+    "desc": "数值求和：在浏览器中生成 Number 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "数值求和",
+      "sum",
+      "number"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "svg-placeholder",
+    "name": "SVG 占位图生成",
+    "desc": "SVG 占位图生成：在浏览器中校验 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "svg",
+      "占位图生成",
+      "placeholder",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "swap-csv-columns",
+    "name": "CSV 列互换",
+    "desc": "CSV 列互换：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "列互换",
+      "swap",
+      "columns"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "temperature",
+    "name": "温度转换",
+    "desc": "温度转换：在浏览器中生成 单位换算 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "温度转换",
+      "temperature",
+      "单位换算"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "text-binary",
+    "name": "Text → ASCII Binary",
+    "desc": "Text → ASCII Binary：在浏览器中格式化 文本/编码 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "text",
+      "→",
+      "ascii",
+      "binary",
+      "文本/编码"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "text-case",
+    "name": "文本大小写转换",
+    "desc": "upper/lower/title/snake/kebab/camel",
+    "keywords": [
+      "文本大小写转换",
+      "text",
+      "case"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "text-diff",
+    "name": "文本差异/合并",
+    "desc": "文本差异/合并：在浏览器中格式化 文本 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "文本差异",
+      "合并",
+      "text",
+      "diff",
+      "文本"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "text-stats",
+    "name": "文本统计",
+    "desc": "文本统计：在浏览器中比较 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "文本统计",
+      "text",
+      "stats"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "text-unicode",
+    "name": "Text → Unicode",
+    "desc": "Text → Unicode：在浏览器中校验 文本/编码 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "text",
+      "→",
+      "unicode",
+      "文本/编码"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "time-between-dates",
+    "name": "两日期间隔",
+    "desc": "两日期间隔：在浏览器中格式化 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "两日期间隔",
+      "time",
+      "between",
+      "dates"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "timestamp",
+    "name": "时间戳转换",
+    "desc": "时间戳转换：在浏览器中分析 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "时间戳转换",
+      "timestamp"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "timezone",
+    "name": "时区换算",
+    "desc": "时区换算：在浏览器中生成 时间/计划 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "时区换算",
+      "timezone",
+      "时间/计划"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "token",
+    "name": "Token 生成器",
+    "desc": "随机字节生成并编码为 Hex / Base64 / URL-safe Base64",
+    "keywords": [
+      "token",
+      "生成器",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "tokenize",
+    "name": "分词与关键词",
+    "desc": "分词与关键词：在浏览器中比较 文本/字符串 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "分词与关键词",
+      "tokenize",
+      "文本/字符串"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "toml-json",
+    "name": "TOML ⇄ JSON",
+    "desc": "TOML ⇄ JSON：在浏览器中生成 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "toml",
+      "⇄",
+      "json"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "toml-to-yaml",
+    "name": "TOML → YAML",
+    "desc": "TOML → YAML：在浏览器中分析 TOML、YAML、Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "toml",
+      "→",
+      "yaml",
+      "to",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "transpose-csv",
+    "name": "CSV 行列转置",
+    "desc": "CSV 行列转置：在浏览器中处理表格数据（CSV/TSV），支持转换、拆分、合并与导出，适合数据清洗与快速查看。",
+    "keywords": [
+      "csv",
+      "行列转置",
+      "transpose"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "truncate-clock-time",
+    "name": "时间截断(整点/整分)",
+    "desc": "时间截断(整点/整分)：在浏览器中格式化 Time 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "时间截断(整点",
+      "整分)",
+      "truncate",
+      "clock",
+      "time"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "tsv-to-json",
+    "name": "TSV → JSON",
+    "desc": "TSV → JSON：在浏览器中转换 JSON、CSV 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "tsv",
+      "→",
+      "json",
+      "to",
+      "csv"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "tts",
+    "name": "文本转语音 (TTS)",
+    "desc": "浏览器 speechSynthesis，选择语音/语速/音调，播放暂停",
+    "keywords": [
+      "文本转语音",
+      "(tts)",
+      "tts",
+      "audio",
+      "productivity"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "ulid",
+    "name": "ULID 生成器",
+    "desc": "ULID 生成器：在浏览器中比较 加密/安全 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "ulid",
+      "生成器",
+      "加密/安全"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "unicode-visual",
+    "name": "Unicode 可视化",
+    "desc": "Unicode 可视化：在浏览器中比较 Text 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "unicode",
+      "可视化",
+      "visual",
+      "text"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "units",
+    "name": "单位换算",
+    "desc": "单位换算：在浏览器中校验 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "单位换算",
+      "units"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "url-dedupe",
+    "name": "URL 去重与域名筛选",
+    "desc": "URL 去重与域名筛选：在浏览器中生成 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "url",
+      "去重与域名筛选",
+      "dedupe",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "url-encode",
+    "name": "URL 编解码",
+    "desc": "百分号编码与解码，支持 encodeURI/encodeURIComponent",
+    "keywords": [
+      "url",
+      "编解码",
+      "encode",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "url-params",
+    "name": "URL 参数批处理",
+    "desc": "URL 参数批处理：在浏览器中格式化 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "url",
+      "参数批处理",
+      "params",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "url-parser",
+    "name": "URL 解析",
+    "desc": "URL 解析：在浏览器中格式化 网络/编码 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "url",
+      "解析",
+      "parser",
+      "网络/编码"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "user-agent",
+    "name": "User-Agent 解析",
+    "desc": "User-Agent 解析：在浏览器中比较 Web 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "user",
+      "agent",
+      "解析",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "utm-clean",
+    "name": "URL 清洗（去跟踪参数）",
+    "desc": "批量移除 UTM、gclid、fbclid 等常见跟踪参数，保留核心参数与哈希片段",
+    "keywords": [
+      "url",
+      "清洗（去跟踪参数）",
+      "utm",
+      "clean",
+      "network"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "uuid",
+    "name": "UUID 生成器",
+    "desc": "UUID 生成器：在浏览器中格式化 Dev 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "uuid",
+      "生成器",
+      "dev"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "uuid-plus",
+    "name": "UUID Plus",
+    "desc": "UUID Plus：在浏览器中转换 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "uuid",
+      "plus"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "validate-json",
+    "name": "JSON 语法校验",
+    "desc": "JSON 语法校验：在浏览器中校验 JSON 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "json",
+      "语法校验",
+      "validate"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "vcard-qr",
+    "name": "vCard QR 生成",
+    "desc": "表单生成 vCard 并生成二维码，支持下载 PNG 和复制文本",
+    "keywords": [
+      "vcard",
+      "qr",
+      "生成",
+      "contact"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "vips",
+    "name": "libvips 转换",
+    "desc": "libvips 转换：在浏览器中格式化 Image 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "libvips",
+      "转换",
+      "vips",
+      "image"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "vtracer",
+    "name": "vtracer 矢量化",
+    "desc": "vtracer 矢量化：在浏览器中转换 Vector 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "vtracer",
+      "矢量化",
+      "vector"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "wifi-qr",
+    "name": "WiFi QR 码生成",
+    "desc": "WiFi QR 码生成：在浏览器中生成 图像/文件 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "wifi",
+      "qr",
+      "码生成",
+      "图像/文件"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "wysiwyg",
+    "name": "HTML WYSIWYG 编辑器",
+    "desc": "HTML WYSIWYG 编辑器 是一个在线工具，用于Web。在浏览器中即时运行，无需上传，适合开发与日常使用。",
+    "keywords": [
+      "html",
+      "wysiwyg",
+      "编辑器",
+      "web"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "xelatex",
+    "name": "XeLaTeX 编译",
+    "desc": "XeLaTeX 编译：在浏览器中比较 Document 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "xelatex",
+      "编译",
+      "document"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "xml-format",
+    "name": "XML 格式化/压缩",
+    "desc": "XML 格式化/压缩：在浏览器中比较 Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "xml",
+      "格式化",
+      "压缩",
+      "format",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "xml-json",
+    "name": "XML ⇄ JSON",
+    "desc": "XML ⇄ JSON：在浏览器中分析 格式与数据处理 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "xml",
+      "⇄",
+      "json"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "xml-validator",
+    "name": "XML 校验器",
+    "desc": "XML 校验器：在浏览器中比较 XML 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "xml",
+      "校验器",
+      "validator"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "yaml-format",
+    "name": "YAML 格式化/压缩",
+    "desc": "YAML 格式化/压缩：在浏览器中格式化 Converter、Format 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "yaml",
+      "格式化",
+      "压缩",
+      "format",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "yaml-json",
+    "name": "YAML ⇄ JSON",
+    "desc": "YAML ⇄ JSON：在浏览器中格式化 Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "yaml",
+      "⇄",
+      "json",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "yaml-toml",
+    "name": "YAML ⇄ TOML",
+    "desc": "YAML ⇄ TOML：在浏览器中分析 Converter 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "yaml",
+      "⇄",
+      "toml",
+      "converter"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "yaml-viewer",
+    "name": "YAML 查看器",
+    "desc": "YAML 查看器：在浏览器中校验 YAML 的实用工具，快速响应、无需上传、适合开发与日常使用。",
+    "keywords": [
+      "yaml",
+      "查看器",
+      "viewer"
+    ],
+    "ogImage": ""
+  },
+  {
+    "id": "zero-width-clean",
+    "name": "零宽字符清理",
+    "desc": "检测并移除零宽/不可见字符（ZWSP/ZWNJ/ZWJ/BOM/双向控制符等），支持统计与一键复制",
+    "keywords": [
+      "零宽字符清理",
+      "zero",
+      "width",
+      "clean",
+      "text"
+    ],
+    "ogImage": ""
+  }
+]

@@ -1,0 +1,536 @@
+import { useMemo, useState } from 'react'
+import { encode as b32enc, decode as b32dec } from 'hi-base32'
+import bs58 from 'bs58'
+import baseX from 'base-x'
+
+// Base62 字母表
+const BASE62 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+const base62 = baseX(BASE62)
+
+// Base45 字母表 (用于健康码等)
+const BASE45 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:'
+const base45 = baseX(BASE45)
+
+// Base85 (Ascii85)
+const Z85_CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-:+=^!/*?&<>()[]{}@%$#"
+const Z85_DEC: Record<string, number> = Object.fromEntries([...Z85_CHARS].map((c, i) => [c, i]))
+
+// Base64 编解码
+function base64Encode(text: string): string {
+  try {
+    return btoa(unescape(encodeURIComponent(text)))
+  } catch {
+    return ''
+  }
+}
+
+function base64Decode(b64: string): string {
+  try {
+    return decodeURIComponent(escape(atob(b64)))
+  } catch {
+    return ''
+  }
+}
+
+// Ascii85 编码
+function ascii85Encode(data: Uint8Array): string {
+  let out = '<~'
+  for (let i = 0; i < data.length; i += 4) {
+    const chunk = data.subarray(i, i + 4)
+    let val = 0
+    for (let j = 0; j < 4; j++) val = (val << 8) + (chunk[j] ?? 0)
+    if (chunk.length === 4 && val === 0) { out += 'z'; continue }
+    let count = chunk.length + 1
+    const digits = [] as number[]
+    for (let k = 0; k < 5; k++) { digits.unshift(val % 85); val = Math.floor(val / 85) }
+    for (let k = 0; k < count; k++) out += String.fromCharCode(digits[k] + 33)
+  }
+  out += '~>'
+  return out
+}
+
+// Ascii85 解码
+function ascii85Decode(s: string): Uint8Array {
+  s = s.trim().replace(/^<~|~>$/g, '').replace(/\s+/g, '')
+  const bytes: number[] = []
+  let block: number[] = []
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i]
+    if (c === 'z') { bytes.push(0, 0, 0, 0); continue }
+    const v = c.charCodeAt(0) - 33
+    if (v < 0 || v >= 85) throw new Error('无效字符')
+    block.push(v)
+    if (block.length === 5) {
+      let val = 0
+      for (let k = 0; k < 5; k++) val = val * 85 + block[k]
+      bytes.push((val >>> 24) & 255, (val >>> 16) & 255, (val >>> 8) & 255, val & 255)
+      block = []
+    }
+  }
+  if (block.length) {
+    for (let i = block.length; i < 5; i++) block.push(84)
+    let val = 0
+    for (let k = 0; k < 5; k++) val = val * 85 + block[k]
+    const tmp = [(val >>> 24) & 255, (val >>> 16) & 255, (val >>> 8) & 255, val & 255]
+    bytes.push(...tmp.slice(0, block.length - 1))
+  }
+  return new Uint8Array(bytes)
+}
+
+// Z85 编码
+function z85Encode(data: Uint8Array): string {
+  if (data.length % 4 !== 0) {
+    // 填充到 4 的倍数
+    const padded = new Uint8Array(Math.ceil(data.length / 4) * 4)
+    padded.set(data)
+    data = padded
+  }
+  let out = ''
+  for (let i = 0; i < data.length; i += 4) {
+    const val = (data[i] << 24) + (data[i + 1] << 16) + (data[i + 2] << 8) + (data[i + 3])
+    let v = val >>> 0
+    const digits = [] as number[]
+    for (let k = 0; k < 5; k++) { digits.unshift(v % 85); v = Math.floor(v / 85) }
+    out += digits.map(d => Z85_CHARS[d]).join('')
+  }
+  return out
+}
+
+// Z85 解码
+function z85Decode(s: string): Uint8Array {
+  if (s.length % 5 !== 0) throw new Error('Z85 字符串长度必须为 5 的倍数')
+  const bytes: number[] = []
+  for (let i = 0; i < s.length; i += 5) {
+    let v = 0
+    for (let k = 0; k < 5; k++) {
+      const c = s[i + k]
+      const d = Z85_DEC[c]
+      if (d === undefined) throw new Error('无效字符: ' + c)
+      v = v * 85 + d
+    }
+    bytes.push((v >>> 24) & 255, (v >>> 16) & 255, (v >>> 8) & 255, v & 255)
+  }
+  return new Uint8Array(bytes)
+}
+
+type EncodingType = 'base64' | 'base32' | 'base45' | 'base58' | 'base62' | 'base85-ascii85' | 'base85-z85'
+type ModeType = 'text' | 'file'
+
+export default function Page() {
+  const [mode, setMode] = useState<ModeType>('text')
+  const [encoding, setEncoding] = useState<EncodingType>('base64')
+  const [direction, setDirection] = useState<'encode' | 'decode'>('encode')
+  
+  // 文本模式
+  const [textInput, setTextInput] = useState('Hello, World!')
+  
+  // 文件模式 - 编码
+  const [file, setFile] = useState<File | null>(null)
+  const [fileB64Output, setFileB64Output] = useState('')
+  
+  // 文件模式 - 解码
+  const [encodedInput, setEncodedInput] = useState('')
+  const [decodeMime, setDecodeMime] = useState('application/octet-stream')
+  const [decodeFilename, setDecodeFilename] = useState('file.bin')
+
+  // 文本编码结果
+  const textOutput = useMemo(() => {
+    if (mode !== 'text') return ''
+    
+    try {
+      const encoder = new TextEncoder()
+      const decoder = new TextDecoder()
+      
+      if (direction === 'encode') {
+        const input = textInput
+        switch (encoding) {
+          case 'base64':
+            return base64Encode(input)
+          case 'base32':
+            return b32enc(input)
+          case 'base45':
+            return base45.encode(encoder.encode(input))
+          case 'base58':
+            return bs58.encode(encoder.encode(input))
+          case 'base62':
+            return base62.encode(encoder.encode(input))
+          case 'base85-ascii85':
+            return ascii85Encode(encoder.encode(input))
+          case 'base85-z85':
+            return z85Encode(encoder.encode(input))
+          default:
+            return ''
+        }
+      } else {
+        // 解码
+        const input = textInput
+        switch (encoding) {
+          case 'base64':
+            return base64Decode(input)
+          case 'base32':
+            return b32dec(input)
+          case 'base45':
+            return decoder.decode(base45.decode(input))
+          case 'base58':
+            return decoder.decode(bs58.decode(input))
+          case 'base62':
+            return decoder.decode(base62.decode(input))
+          case 'base85-ascii85':
+            return decoder.decode(ascii85Decode(input))
+          case 'base85-z85':
+            return decoder.decode(z85Decode(input))
+          default:
+            return ''
+        }
+      }
+    } catch (e: any) {
+      return '错误: ' + (e.message || String(e))
+    }
+  }, [mode, encoding, direction, textInput])
+
+  // 文件编码
+  async function encodeFile() {
+    if (!file) return
+    try {
+      const buffer = await file.arrayBuffer()
+      const bytes = new Uint8Array(buffer)
+      const encoder = new TextEncoder()
+      
+      let result = ''
+      switch (encoding) {
+        case 'base64': {
+          const reader = new FileReader()
+          const p = new Promise<string>((res, rej) => {
+            reader.onload = () => res(String(reader.result))
+            reader.onerror = rej
+          })
+          reader.readAsDataURL(file)
+          result = await p
+          break
+        }
+        case 'base32':
+          result = b32enc(bytes)
+          break
+        case 'base45':
+          result = base45.encode(bytes)
+          break
+        case 'base58':
+          result = bs58.encode(bytes)
+          break
+        case 'base62':
+          result = base62.encode(bytes)
+          break
+        case 'base85-ascii85':
+          result = ascii85Encode(bytes)
+          break
+        case 'base85-z85':
+          result = z85Encode(bytes)
+          break
+      }
+      setFileB64Output(result)
+    } catch (e: any) {
+      setFileB64Output('错误: ' + (e.message || String(e)))
+    }
+  }
+
+  // 文件解码
+  function decodeToFile() {
+    if (!encodedInput.trim()) return
+    
+    try {
+      const decoder = new TextDecoder()
+      let bytes: Uint8Array
+      
+      if (encoding === 'base64') {
+        // 支持 Data URL 格式
+        const dataUrl = encodedInput.startsWith('data:') 
+          ? encodedInput 
+          : `data:${decodeMime};base64,${encodedInput}`
+        const a = document.createElement('a')
+        a.href = dataUrl
+        a.download = decodeFilename
+        a.click()
+        return
+      }
+      
+      // 其他编码格式
+      switch (encoding) {
+        case 'base32':
+          bytes = new Uint8Array(b32dec(encodedInput, true))
+          break
+        case 'base45':
+          bytes = base45.decode(encodedInput)
+          break
+        case 'base58':
+          bytes = bs58.decode(encodedInput)
+          break
+        case 'base62':
+          bytes = base62.decode(encodedInput)
+          break
+        case 'base85-ascii85':
+          bytes = ascii85Decode(encodedInput)
+          break
+        case 'base85-z85':
+          bytes = z85Decode(encodedInput)
+          break
+        default:
+          throw new Error('不支持的编码格式')
+      }
+      
+      // 创建 Blob 并下载
+      const blob = new Blob([bytes], { type: decodeMime })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = decodeFilename
+      a.click()
+      URL.revokeObjectURL(url)
+    } catch (e: any) {
+      alert('解码失败: ' + (e.message || String(e)))
+    }
+  }
+
+  const encodingInfo = {
+    'base64': { name: 'Base64', desc: '最常用的编码，广泛用于 Web、邮件等场景' },
+    'base32': { name: 'Base32', desc: '使用 32 个字符，适合不区分大小写的场景' },
+    'base45': { name: 'Base45', desc: '用于健康码等二维码场景，编码效率较高' },
+    'base58': { name: 'Base58', desc: '比特币地址编码，去除易混淆字符 (0,O,I,l)' },
+    'base62': { name: 'Base62', desc: '使用 0-9 A-Z a-z，适合短链接等场景' },
+    'base85-ascii85': { name: 'Base85 (Ascii85)', desc: 'Adobe 使用的编码格式，以 <~ ~> 包围' },
+    'base85-z85': { name: 'Base85 (Z85)', desc: 'ZeroMQ 使用的编码格式，更紧凑' },
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* 配置区域 */}
+      <div className="bg-slate-800/50 rounded-lg p-4 space-y-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="space-y-2">
+            <label className="block text-sm font-medium text-slate-300">模式</label>
+            <select 
+              className="w-full rounded bg-slate-700 border border-slate-600 px-3 py-2"
+              value={mode}
+              onChange={(e) => setMode(e.target.value as ModeType)}
+            >
+              <option value="text">文本</option>
+              <option value="file">文件</option>
+            </select>
+          </div>
+          
+          <div className="space-y-2">
+            <label className="block text-sm font-medium text-slate-300">编码格式</label>
+            <select 
+              className="w-full rounded bg-slate-700 border border-slate-600 px-3 py-2"
+              value={encoding}
+              onChange={(e) => setEncoding(e.target.value as EncodingType)}
+            >
+              <option value="base64">Base64</option>
+              <option value="base32">Base32</option>
+              <option value="base45">Base45</option>
+              <option value="base58">Base58</option>
+              <option value="base62">Base62</option>
+              <option value="base85-ascii85">Base85 (Ascii85)</option>
+              <option value="base85-z85">Base85 (Z85)</option>
+            </select>
+          </div>
+          
+          {mode === 'text' && (
+            <div className="space-y-2">
+              <label className="block text-sm font-medium text-slate-300">方向</label>
+              <select 
+                className="w-full rounded bg-slate-700 border border-slate-600 px-3 py-2"
+                value={direction}
+                onChange={(e) => setDirection(e.target.value as 'encode' | 'decode')}
+              >
+                <option value="encode">编码</option>
+                <option value="decode">解码</option>
+              </select>
+            </div>
+          )}
+        </div>
+        
+        {/* 编码格式说明 */}
+        <div className="bg-slate-700/50 rounded p-3 text-sm">
+          <div className="font-semibold text-slate-200 mb-1">
+            {encodingInfo[encoding].name}
+          </div>
+          <div className="text-slate-400">
+            {encodingInfo[encoding].desc}
+          </div>
+        </div>
+      </div>
+
+      {/* 文本模式 */}
+      {mode === 'text' && (
+        <div className="grid gap-4">
+          <div className="space-y-2">
+            <label className="block text-lg font-semibold">
+              {direction === 'encode' ? '输入文本' : '输入编码'}
+            </label>
+            <textarea 
+              className="w-full h-40 rounded bg-slate-800 border border-slate-700 p-3 font-mono text-sm"
+              value={textInput}
+              onChange={(e) => setTextInput(e.target.value)}
+              placeholder={direction === 'encode' ? '输入要编码的文本...' : '输入要解码的内容...'}
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <label className="block text-lg font-semibold">
+              {direction === 'encode' ? '编码结果' : '解码结果'}
+            </label>
+            <textarea 
+              className="w-full h-40 rounded bg-slate-800 border border-slate-700 p-3 font-mono text-sm"
+              value={textOutput}
+              readOnly
+              placeholder="结果将显示在这里..."
+            />
+            {textOutput && !textOutput.startsWith('错误') && (
+              <button
+                className="px-4 py-2 rounded bg-indigo-600 hover:bg-indigo-500 transition-colors"
+                onClick={() => navigator.clipboard.writeText(textOutput)}
+              >
+                📋 复制结果
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* 文件模式 */}
+      {mode === 'file' && (
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* 文件编码 */}
+          <section className="space-y-4 p-4 bg-slate-800/30 rounded-lg">
+            <h3 className="text-xl font-semibold">文件 → 编码</h3>
+            <input 
+              type="file" 
+              className="w-full"
+              onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+            />
+            <button 
+              className="px-4 py-2 rounded bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              onClick={encodeFile}
+              disabled={!file}
+            >
+              转换为编码
+            </button>
+            
+            {fileB64Output && (
+              <div className="space-y-2">
+                <label className="block text-sm font-medium text-slate-300">编码结果</label>
+                <textarea 
+                  className="w-full h-48 rounded bg-slate-800 border border-slate-700 p-3 font-mono text-xs"
+                  readOnly
+                  value={fileB64Output}
+                />
+                <div className="flex gap-2">
+                  <button
+                    className="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition-colors"
+                    onClick={() => navigator.clipboard.writeText(fileB64Output)}
+                  >
+                    📋 复制
+                  </button>
+                  <a 
+                    className="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition-colors inline-block"
+                    href={`data:text/plain;charset=utf-8,${encodeURIComponent(fileB64Output)}`}
+                    download={`${file?.name || 'file'}.${encoding}.txt`}
+                  >
+                    💾 保存为文本
+                  </a>
+                </div>
+              </div>
+            )}
+          </section>
+          
+          {/* 文件解码 */}
+          <section className="space-y-4 p-4 bg-slate-800/30 rounded-lg">
+            <h3 className="text-xl font-semibold">编码 → 文件</h3>
+            
+            <div className="space-y-2">
+              <label className="block text-sm font-medium text-slate-300">
+                文件名
+              </label>
+              <input 
+                className="w-full rounded bg-slate-700 border border-slate-600 px-3 py-2"
+                placeholder="file.bin"
+                value={decodeFilename}
+                onChange={(e) => setDecodeFilename(e.target.value)}
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <label className="block text-sm font-medium text-slate-300">
+                MIME 类型 (可选)
+              </label>
+              <input 
+                className="w-full rounded bg-slate-700 border border-slate-600 px-3 py-2"
+                placeholder="application/octet-stream"
+                value={decodeMime}
+                onChange={(e) => setDecodeMime(e.target.value)}
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <label className="block text-sm font-medium text-slate-300">
+                编码内容 {encoding === 'base64' && '(支持 Data URL)'}
+              </label>
+              <textarea 
+                className="w-full h-48 rounded bg-slate-700 border border-slate-600 p-3 font-mono text-xs"
+                placeholder={`粘贴 ${encodingInfo[encoding].name} 编码的内容...`}
+                value={encodedInput}
+                onChange={(e) => setEncodedInput(e.target.value)}
+              />
+            </div>
+            
+            <button 
+              className="px-4 py-2 rounded bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              onClick={decodeToFile}
+              disabled={!encodedInput.trim()}
+            >
+              解码并下载文件
+            </button>
+          </section>
+        </div>
+      )}
+
+      {/* 使用说明 */}
+      <details className="bg-slate-800/30 rounded-lg p-4">
+        <summary className="cursor-pointer font-semibold text-lg mb-2">
+          📖 使用说明
+        </summary>
+        <div className="space-y-3 text-sm text-slate-300 mt-3">
+          <div>
+            <h4 className="font-semibold text-slate-200 mb-1">支持的编码格式:</h4>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li><strong>Base64:</strong> 最常用，使用 64 个字符 (A-Z, a-z, 0-9, +, /)</li>
+              <li><strong>Base32:</strong> 32 个字符，不区分大小写，适合人工输入</li>
+              <li><strong>Base45:</strong> 45 个字符，用于健康码等二维码场景</li>
+              <li><strong>Base58:</strong> 58 个字符，去除易混淆字符，用于比特币地址</li>
+              <li><strong>Base62:</strong> 62 个字符 (0-9, A-Z, a-z)，适合短链接</li>
+              <li><strong>Base85:</strong> 85 个字符，编码效率更高，有两种变体 (Ascii85 和 Z85)</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold text-slate-200 mb-1">两种模式:</h4>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li><strong>文本模式:</strong> 直接编码/解码文本内容</li>
+              <li><strong>文件模式:</strong> 将文件编码为文本，或从编码文本还原文件</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold text-slate-200 mb-1">常见应用场景:</h4>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>Base64: 网页中嵌入图片、传输二进制数据</li>
+              <li>Base32: Google Authenticator 密钥、Tor 地址</li>
+              <li>Base58: 比特币/加密货币地址</li>
+              <li>Base62: 短链接服务、唯一ID生成</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </div>
+  )
+}

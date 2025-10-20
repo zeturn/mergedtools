@@ -1,0 +1,10 @@
+declare module '@scure/bip39/wordlists/english.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/simplified-chinese.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/traditional-chinese.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/japanese.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/korean.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/french.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/spanish.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/italian.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/portuguese.js' { export const wordlist: string[] }
+declare module '@scure/bip39/wordlists/czech.js' { export const wordlist: string[] }
