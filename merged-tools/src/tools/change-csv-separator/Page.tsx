@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import Papa from 'papaparse'
+import { Input, Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('a,b\n1,2\n3,4')
@@ -21,12 +22,12 @@ export default function Page(){
   return (
     <div className="space-y-4">
       <div className="grid md:grid-cols-4 gap-3">
-        <L label="输入分隔符"><input className="input" value={inSep} onChange={e=>setInSep(e.target.value)} /></L>
-        <L label="输出分隔符"><input className="input" value={outSep} onChange={e=>setOutSep(e.target.value)} /></L>
-        <L label="输出引号"><input className="input" value={quote} onChange={e=>setQuote(e.target.value)} /></L>
-        <L label="输出换行"><input className="input" value={newline} onChange={e=>setNewline(e.target.value)} placeholder={'\n 或 \r\n'} /></L>
+        <L label="输入分隔符"><Input  variant="simple" value={inSep} onChange={e=>setInSep(e.target.value)} /></L>
+        <L label="输出分隔符"><Input  variant="simple" value={outSep} onChange={e=>setOutSep(e.target.value)} /></L>
+        <L label="输出引号"><Input  variant="simple" value={quote} onChange={e=>setQuote(e.target.value)} /></L>
+        <L label="输出换行"><Input  variant="simple" value={newline} onChange={e=>setNewline(e.target.value)} placeholder={'\n 或 \r\n'} /></L>
       </div>
-      <textarea className="textarea h-48" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={input} onChange={e=>setInput(e.target.value)} />
       <div className="grid md:grid-cols-2 gap-4">
         <section>
           <h3 className="font-semibold mb-2">预览</h3>

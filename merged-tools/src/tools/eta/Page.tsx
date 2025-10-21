@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function fmtDuration(sec: number) {
   if (!Number.isFinite(sec) || sec < 0) return '-'
@@ -35,10 +36,10 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">总量</span><input className="input flex-1" value={total} onChange={(e)=>setTotal(e.target.value)} /></label>
-        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">已完成</span><input className="input flex-1" value={done} onChange={(e)=>setDone(e.target.value)} /></label>
-        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">速率(单位/秒)</span><input className="input flex-1" value={rate} onChange={(e)=>setRate(e.target.value)} /></label>
-        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">已用时间(秒)</span><input className="input flex-1" value={elapsed} onChange={(e)=>setElapsed(e.target.value)} /></label>
+        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">总量</span><Input  variant="simple" value={total} onChange={(e)=>setTotal(e.target.value)} /></label>
+        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">已完成</span><Input  variant="simple" value={done} onChange={(e)=>setDone(e.target.value)} /></label>
+        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">速率(单位/秒)</span><Input  variant="simple" value={rate} onChange={(e)=>setRate(e.target.value)} /></label>
+        <label className="flex items-center gap-2"><span className="w-28 text-sm text-gray-500">已用时间(秒)</span><Input  variant="simple" value={elapsed} onChange={(e)=>setElapsed(e.target.value)} /></label>
       </div>
       <div className="rounded border p-3 bg-gray-50 dark:bg-gray-900/40 space-y-1">
         <div>剩余数量：{val.remaining}</div>

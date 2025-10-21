@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page(){
   const [a, setA] = useState('0')
@@ -19,7 +20,7 @@ export default function Page(){
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-        <input className="input" value={a} onChange={e=>setA(e.target.value)} />
+        <Input  variant="simple" value={a} onChange={e=>setA(e.target.value)} />
         <select className="input" value={op} onChange={e=>setOp(e.target.value as any)}>
           <option value="+">+</option>
           <option value="-">-</option>
@@ -27,8 +28,8 @@ export default function Page(){
           <option value="/">/</option>
           <option value="^">^</option>
         </select>
-        <input className="input" value={b} onChange={e=>setB(e.target.value)} />
-        <input className="input" value={res} readOnly />
+        <Input  variant="simple" value={b} onChange={e=>setB(e.target.value)} />
+        <Input  variant="simple" value={res} readOnly />
       </div>
       <p className="text-sm text-gray-500">需要复杂表达式？试试“数学表达式计算器（math-eval）”。</p>
     </div>

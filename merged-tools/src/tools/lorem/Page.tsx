@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 const WORDS = 'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'.split(' ')
 
@@ -55,7 +56,7 @@ export default function Page() {
         <input type="number" className="input w-28" min={1} max={1000} value={count} onChange={(e)=>setCount(Math.max(1, Math.min(1000, Number(e.target.value))))} />
         <button className="btn" onClick={onCopy}>复制</button>
       </div>
-      <textarea className="textarea h-64" value={text} readOnly />
+      <Textarea variant="simple" className="h-64" value={text} readOnly />
     </div>
   )
 }

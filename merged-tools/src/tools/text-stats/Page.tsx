@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function utf8Bytes(s: string) {
   // 粗略估计：使用 TextEncoder 可获得精确字节数
@@ -19,7 +20,7 @@ export default function Page() {
 
   return (
     <div className="space-y-4">
-      <textarea className="textarea h-64" value={text} onChange={(e)=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-64" value={text} onChange={(e)=>setText(e.target.value)} />
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
         <div className="rounded border p-2">字符数：{stats.chars}</div>
         <div className="rounded border p-2">非空字符：{stats.nonSpace}</div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Input from '../../components/Input'
 
 function cToAll(c: number){
   const f = c*9/5+32
@@ -26,14 +27,14 @@ export default function Page(){
   return (
     <div className="space-y-3">
       <div className="grid md:grid-cols-2 gap-3">
-        <label className="flex items-center gap-2">摄氏 °C<input className="input" value={c} onChange={e=>syncFromC(e.target.value)} /></label>
-        <label className="flex items-center gap-2">华氏 °F<input className="input" value={f} onChange={e=>{
+        <label className="flex items-center gap-2">摄氏 °C<Input  variant="simple" value={c} onChange={e=>syncFromC(e.target.value)} /></label>
+        <label className="flex items-center gap-2">华氏 °F<Input  variant="simple" value={f} onChange={e=>{
           const fv = parseFloat(e.target.value); setF(e.target.value); if(!isNaN(fv)) syncFromC(String((fv-32)*5/9))
         }} /></label>
-        <label className="flex items-center gap-2">开尔文 K<input className="input" value={k} onChange={e=>{
+        <label className="flex items-center gap-2">开尔文 K<Input  variant="simple" value={k} onChange={e=>{
           const kv = parseFloat(e.target.value); setK(e.target.value); if(!isNaN(kv)) syncFromC(String(kv-273.15))
         }} /></label>
-        <label className="flex items-center gap-2">兰氏 °R<input className="input" value={r} onChange={e=>{
+        <label className="flex items-center gap-2">兰氏 °R<Input  variant="simple" value={r} onChange={e=>{
           const rv = parseFloat(e.target.value); setR(e.target.value); if(!isNaN(rv)) syncFromC(String(rv*5/9-273.15))
         }} /></label>
       </div>

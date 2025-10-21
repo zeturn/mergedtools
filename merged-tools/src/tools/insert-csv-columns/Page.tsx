@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import Papa from 'papaparse'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('a,b\n1,2\n3,4')
@@ -30,7 +31,7 @@ export default function Page(){
         <L label="列值"><input className="input" value={value} onChange={e=>setValue(e.target.value)} disabled={byRowNumber} /></L>
         <label className="flex items-center gap-2 mt-6"><input type="checkbox" checked={byRowNumber} onChange={e=>setByRowNumber(e.target.checked)} /> 使用行号</label>
       </div>
-      <textarea className="textarea h-48" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={input} onChange={e=>setInput(e.target.value)} />
       <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{out}</pre>
     </div>
   )

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function parseHMS(s: string){
   const m = s.trim().match(/^(-)?(\d{1,2}):(\d{1,2}):(\d{1,2})(?:\.(\d+))?$/)
@@ -17,7 +18,7 @@ export default function Page(){
   }, [time])
   return (
     <div className="space-y-3">
-      <input className="input" value={time} onChange={e=>setTime(e.target.value)} />
+      <Input  variant="simple" value={time} onChange={e=>setTime(e.target.value)} />
       <div className="rounded border p-3 bg-gray-50 dark:bg-gray-900/40 font-mono">{out}</div>
     </div>
   )

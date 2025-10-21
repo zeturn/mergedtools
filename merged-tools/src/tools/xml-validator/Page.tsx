@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { XMLParser } from 'fast-xml-parser'
+import { Textarea } from '../../components/Input'
 
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' })
 
@@ -25,7 +26,7 @@ export default function Page(){
           美化显示
         </label>
       </div>
-      <textarea className="textarea h-60" value={xml} onChange={e=>setXml(e.target.value)} />
+      <Textarea variant="simple" className="h-60" value={xml} onChange={e=>setXml(e.target.value)} />
       <div className={"rounded p-3 " + (result.ok ? 'bg-emerald-900/40' : 'bg-rose-900/40')}>
         {result.ok ? (
           <>

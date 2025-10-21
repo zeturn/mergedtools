@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Input from '../../components/Input'
 
 const SECTIONS = [
   { title: '元字符', items: [ ['.', '任意字符'], ['\d', '数字'], ['\w', '字母/数字/下划线'], ['\s', '空白'], ['\b', '单词边界'] ] },
@@ -37,8 +38,8 @@ export default function Page(){
       <div className="space-y-2">
         <div className="text-slate-400">小测试</div>
         <div className="flex gap-2 items-center flex-wrap">
-          <input className="bg-slate-800 rounded p-2 font-mono" value={pattern} onChange={(e)=>setPattern(e.target.value)} />
-          <input className="bg-slate-800 rounded p-2 w-20" value={flags} onChange={(e)=>setFlags(e.target.value)} />
+          <Input  variant="simple" className="" value={pattern} onChange={(e)=>setPattern(e.target.value)} />
+          <Input  variant="simple" className="" value={flags} onChange={(e)=>setFlags(e.target.value)} />
           <button className="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600" onClick={test}>测试</button>
         </div>
         <textarea className="w-full min-h-24 bg-slate-900 rounded p-2" value={text} onChange={(e)=>setText(e.target.value)} />

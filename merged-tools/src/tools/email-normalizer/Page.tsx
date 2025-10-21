@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('User.Name+alias@gmail.com')
@@ -6,7 +7,7 @@ export default function Page(){
 
   return (
     <div className="space-y-3">
-      <input className="w-full bg-slate-800 rounded p-2" value={input} onChange={(e)=>setInput(e.target.value)} />
+      <Input  variant="simple" className="" value={input} onChange={(e)=>setInput(e.target.value)} />
       <div className="bg-slate-900 rounded p-3 font-mono">{out}</div>
       <div className="text-xs text-slate-400">说明：目前支持 gmail（去点与+tag）、outlook/hotmail（保留点、去掉 +tag）、yahoo（保留点，去掉 -tag），其他域名仅小写本地部分。</div>
     </div>

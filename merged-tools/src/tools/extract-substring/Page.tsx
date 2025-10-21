@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [text, setText] = useState('Hello [name], welcome to [place]!')
@@ -28,7 +29,7 @@ export default function Page(){
         <L label="结束标记"><input className="input" value={end} onChange={e=>setEnd(e.target.value)} /></L>
         <label className="flex items-center gap-2 mt-6"><input type="checkbox" checked={all} onChange={e=>setAll(e.target.checked)} /> 提取全部</label>
       </div>
-      <textarea className="textarea h-48" value={text} onChange={e=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={text} onChange={e=>setText(e.target.value)} />
       <div>
         <h3 className="font-semibold mb-2">结果（{result.length}）</h3>
         <ul className="list-decimal list-inside space-y-1 text-sm">

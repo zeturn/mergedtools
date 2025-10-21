@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { XMLBuilder } from 'fast-xml-parser'
+import { Textarea } from '../../components/Input'
 
 const builder = new XMLBuilder({ ignoreAttributes: false, attributeNamePrefix: '@_' })
 
@@ -12,7 +13,7 @@ export default function Page(){
     <div className="grid md:grid-cols-2 gap-6">
       <section className="space-y-2">
         <h2 className="text-xl font-semibold">JSON</h2>
-        <textarea className="textarea h-64" value={input} onChange={e=>setInput(e.target.value)} />
+        <Textarea variant="simple" className="h-64" value={input} onChange={e=>setInput(e.target.value)} />
       </section>
       <section className="space-y-2">
         <h2 className="text-xl font-semibold">XML</h2>

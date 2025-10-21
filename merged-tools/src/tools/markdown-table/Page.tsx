@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function parseCSV(s: string): string[][] {
   // 简易 CSV（不处理引号嵌套的所有边界，用于小工具足够）：按行、逗号、去除包裹引号
@@ -39,13 +40,13 @@ export default function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <div className="text-sm text-gray-500 mb-1">CSV → Markdown 表格</div>
-          <textarea className="textarea h-48" value={csv} onChange={(e)=>setCsv(e.target.value)} />
-          <textarea className="textarea h-48 mt-2" value={mdOut} readOnly />
+          <Textarea variant="simple" className="h-48" value={csv} onChange={(e)=>setCsv(e.target.value)} />
+          <Textarea variant="simple" className="h-48 mt-2" value={mdOut} readOnly />
         </div>
         <div>
           <div className="text-sm text-gray-500 mb-1">Markdown 表格 → CSV</div>
-          <textarea className="textarea h-48" value={md} onChange={(e)=>setMd(e.target.value)} placeholder="粘贴 Markdown 表格文本" />
-          <textarea className="textarea h-48 mt-2" value={csvOut} readOnly />
+          <Textarea variant="simple" className="h-48" value={md} onChange={(e)=>setMd(e.target.value)} placeholder="粘贴 Markdown 表格文本" />
+          <Textarea variant="simple" className="h-48 mt-2" value={csvOut} readOnly />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 function slugify(s: string) {
   return s.trim().toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-')
@@ -28,13 +29,13 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="grid sm:grid-cols-3 gap-2">
-        <textarea className="textarea h-40" value={md} onChange={(e)=>setMd(e.target.value)} />
+        <Textarea variant="simple" className="h-40" value={md} onChange={(e)=>setMd(e.target.value)} />
         <div className="space-y-2">
-          <label className="text-sm text-gray-500">最小级别<input className="input w-24" type="number" min={1} max={6} value={minLevel} onChange={(e)=>setMinLevel(Number(e.target.value))} /></label>
-          <label className="text-sm text-gray-500">最大级别<input className="input w-24" type="number" min={1} max={6} value={maxLevel} onChange={(e)=>setMaxLevel(Number(e.target.value))} /></label>
+          <label className="text-sm text-gray-500">最小级别<Input  variant="simple" type="number" min={1} max={6} value={minLevel} onChange={(e)=>setMinLevel(Number(e.target.value))} /></label>
+          <label className="text-sm text-gray-500">最大级别<Input  variant="simple" type="number" min={1} max={6} value={maxLevel} onChange={(e)=>setMaxLevel(Number(e.target.value))} /></label>
           <button className="btn" onClick={onCopy}>复制 TOC</button>
         </div>
-        <textarea className="textarea h-40" value={toc} readOnly />
+        <Textarea variant="simple" className="h-40" value={toc} readOnly />
       </div>
     </div>
   )

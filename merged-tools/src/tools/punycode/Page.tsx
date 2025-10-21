@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 // 轻量 Punycode 实现（RFC 3492 简化版，适用于域名 label），仅做基础转换
 
@@ -104,8 +105,8 @@ export default function Page() {
           <option value="toUnicode">Punycode → Unicode</option>
         </select>
       </div>
-      <input className="input" value={host} onChange={(e)=>setHost(e.target.value)} />
-      <textarea className="textarea h-32" value={out} readOnly />
+      <Input  variant="simple" value={host} onChange={(e)=>setHost(e.target.value)} />
+      <Textarea variant="simple" className="h-32" value={out} readOnly />
       <div className="text-xs text-gray-500">提示：IDNA 复杂度较高，此实现为简化版本，适用于一般场景。</div>
     </div>
   )

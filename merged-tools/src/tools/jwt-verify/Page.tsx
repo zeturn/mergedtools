@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 type Alg = 'HS256' | 'RS256'
 
@@ -50,7 +51,7 @@ export default function Page(){
           </select>
         </label>
         {alg==='HS256'? (
-          <input className="bg-slate-800 rounded p-2 min-w-64" placeholder="共享密钥" value={secret} onChange={(e)=>setSecret(e.target.value)} />
+          <Input  variant="simple" className="" placeholder="共享密钥" value={secret} onChange={(e)=>setSecret(e.target.value)} />
         ):(
           <textarea className="bg-slate-800 rounded p-2 min-w-64 min-h-28 font-mono" placeholder={`PEM 公钥 (BEGIN PUBLIC KEY)`} value={publicPem} onChange={(e)=>setPublicPem(e.target.value)} />
         )}

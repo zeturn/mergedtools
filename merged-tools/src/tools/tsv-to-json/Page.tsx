@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import Papa from 'papaparse'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('name\tage\nAlice\t18\nBob\t20')
@@ -25,7 +26,7 @@ export default function Page(){
     <div className="space-y-3">
       <label className="flex items-center gap-2"><input type="checkbox" checked={header} onChange={e=>setHeader(e.target.checked)} /> 第一行为表头</label>
       <div className="grid md:grid-cols-2 gap-6">
-        <textarea className="textarea h-52" value={input} onChange={e=>setInput(e.target.value)} />
+        <Textarea variant="simple" className="h-52" value={input} onChange={e=>setInput(e.target.value)} />
         <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{out}</pre>
       </div>
     </div>

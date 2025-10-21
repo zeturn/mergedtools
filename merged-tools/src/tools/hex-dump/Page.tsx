@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function toHexDump(bytes: Uint8Array) {
   const lines: string[] = []
@@ -28,7 +29,7 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
-        <textarea className="textarea h-32" value={text} onChange={(e)=>{ setText(e.target.value); onText(e.target.value) }} />
+        <Textarea variant="simple" className="h-32" value={text} onChange={(e)=>{ setText(e.target.value); onText(e.target.value) }} />
         <div className="flex items-center gap-2">
           <input type="file" ref={fileRef} onChange={(e)=>{ const f=e.target.files?.[0]; if(f) onFile(f) }} />
         </div>

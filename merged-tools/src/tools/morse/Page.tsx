@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 const MAP: Record<string, string> = {
   A: '.-', B: '-...', C: '-.-.', D: '-..', E: '.', F: '..-.', G: '--.', H: '....', I: '..', J: '.---', K: '-.-', L: '.-..', M: '--', N: '-.', O: '---', P: '.--.', Q: '--.-', R: '.-.', S: '...', T: '-', U: '..-', V: '...-', W: '.--', X: '-..-', Y: '-.--', Z: '--..',
@@ -65,12 +66,12 @@ export default function Page() {
           <option value="decode">摩斯 → 文本</option>
         </select>
         <label className="flex items-center gap-2 text-sm text-gray-500">单位(ms)
-          <input className="input w-24" type="number" min={20} max={1000} value={unit} onChange={(e)=>setUnit(Math.max(20, Math.min(1000, Number(e.target.value)||100)))} />
+          <Input  variant="simple" type="number" min={20} max={1000} value={unit} onChange={(e)=>setUnit(Math.max(20, Math.min(1000, Number(e.target.value)||100)))} />
         </label>
         {mode === 'encode' && <button className="btn" onClick={play}>播放</button>}
       </div>
-      <textarea className="textarea h-40" value={text} onChange={(e)=>setText(e.target.value)} placeholder={mode==='encode'? '输入要编码的文本' : '输入 . 和 -，单词间用 /，字符间用空格'} />
-      <textarea className="textarea h-40" value={out} readOnly />
+      <Textarea variant="simple" className="h-40" value={text} onChange={(e)=>setText(e.target.value)} placeholder={mode==='encode'? '输入要编码的文本' : '输入 . 和 -，单词间用 /，字符间用空格'} />
+      <Textarea variant="simple" className="h-40" value={out} readOnly />
     </div>
   )
 }

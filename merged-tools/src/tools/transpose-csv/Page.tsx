@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import Papa from 'papaparse'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('a,b,c\n1,2,3\n4,5,6')
@@ -17,7 +18,7 @@ export default function Page(){
 
   return (
     <div className="space-y-4">
-      <textarea className="textarea h-48" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={input} onChange={e=>setInput(e.target.value)} />
       <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{out}</pre>
     </div>
   )

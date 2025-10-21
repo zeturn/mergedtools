@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 type Item = { cmd: string; desc: string; cat: string }
 
@@ -34,7 +35,7 @@ export default function Page(){
 
   return (
     <div className="space-y-3">
-      <input className="w-full bg-slate-800 rounded p-2" placeholder="搜索命令或说明" value={q} onChange={(e)=>setQ(e.target.value)} />
+      <Input  variant="simple" className="" placeholder="搜索命令或说明" value={q} onChange={(e)=>setQ(e.target.value)} />
       {cats.map(cat=> (
         <div key={cat} className="space-y-2">
           <div className="text-slate-400">{cat}</div>

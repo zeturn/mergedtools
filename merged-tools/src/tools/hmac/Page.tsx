@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Input from '../../components/Input'
 
 async function hmac(alg: 'SHA-1'|'SHA-256'|'SHA-384'|'SHA-512', key: string, msg: string): Promise<ArrayBuffer> {
   const enc = new TextEncoder()
@@ -55,8 +56,8 @@ export default function Page() {
           <option>SHA-384</option>
           <option>SHA-512</option>
         </select>
-        <input className="rounded bg-slate-800 p-2" placeholder="Key" value={key} onChange={(e)=>setKey(e.target.value)} />
-        <input className="rounded bg-slate-800 p-2 min-w-[240px]" placeholder="Message" value={msg} onChange={(e)=>setMsg(e.target.value)} />
+        <Input  variant="simple" className="" placeholder="Key" value={key} onChange={(e)=>setKey(e.target.value)} />
+        <Input  variant="simple" className="" placeholder="Message" value={msg} onChange={(e)=>setMsg(e.target.value)} />
         <select className="rounded bg-slate-800 p-2" value={enc} onChange={(e)=>setEnc(e.target.value as any)}>
           <option value="hex">Hex</option>
           <option value="base64">Base64</option>

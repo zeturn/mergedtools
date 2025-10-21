@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function diff(a: Date, b: Date){
   const ms = Math.abs(b.getTime() - a.getTime())
@@ -21,8 +22,8 @@ export default function Page(){
   return (
     <div className="space-y-3">
       <div className="grid md:grid-cols-2 gap-2">
-        <input className="input" value={start} onChange={e=>setStart(e.target.value)} />
-        <input className="input" value={end} onChange={e=>setEnd(e.target.value)} />
+        <Input  variant="simple" value={start} onChange={e=>setStart(e.target.value)} />
+        <Input  variant="simple" value={end} onChange={e=>setEnd(e.target.value)} />
       </div>
       <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{out}</pre>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Input from '../../components/Input'
 
 async function aesEncrypt(plain: string, keyRaw: string) {
   const enc = new TextEncoder()
@@ -46,8 +47,8 @@ export default function Page() {
       <section className="space-y-2">
         <h3 className="text-xl font-semibold">AES-GCM</h3>
         <div className="grid md:grid-cols-2 gap-3">
-          <input className="rounded bg-slate-800 p-2" value={plain} onChange={(e)=>setPlain(e.target.value)} placeholder="明文" />
-          <input className="rounded bg-slate-800 p-2" value={pass} onChange={(e)=>setPass(e.target.value)} placeholder="口令" />
+          <Input  variant="simple" className="" value={plain} onChange={(e)=>setPlain(e.target.value)} placeholder="明文" />
+          <Input  variant="simple" className="" value={pass} onChange={(e)=>setPass(e.target.value)} placeholder="口令" />
         </div>
         <div className="flex gap-2">
           <button className="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600" onClick={async ()=> setCipher(await aesEncrypt(plain, pass))}>加密</button>
@@ -74,7 +75,7 @@ export default function Page() {
             setRsaText(new TextDecoder().decode(buf))
           }}>解密到文本框</button>
         </div>
-        <input className="rounded bg-slate-800 p-2 w-full" value={rsaText} onChange={(e)=>setRsaText(e.target.value)} placeholder="要加密/解密的文本" />
+        <Input  variant="simple" className="" value={rsaText} onChange={(e)=>setRsaText(e.target.value)} placeholder="要加密/解密的文本" />
         <pre className="rounded bg-slate-800 p-3 font-mono break-all whitespace-pre-wrap">{rsaOut}</pre>
       </section>
     </div>

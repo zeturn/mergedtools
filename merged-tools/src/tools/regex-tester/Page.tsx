@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function safeRegex(pattern: string, flags: string): RegExp | null {
   try {
@@ -68,9 +69,9 @@ export default function Page() {
         <div className="space-y-3">
           <div className="grid grid-cols-[auto,1fr] items-center gap-2">
             <label className="text-sm">正则</label>
-            <input className="border rounded px-2 py-1" placeholder="例如: (\\w+)\\s+(\\d+)" value={pattern} onChange={e=>setPattern(e.target.value)} />
+            <Input  variant="simple" className="" placeholder="例如: (\\w+)\\s+(\\d+)" value={pattern} onChange={e=>setPattern(e.target.value)} />
             <label className="text-sm">标志</label>
-            <input className="border rounded px-2 py-1" placeholder="g i m s u y" value={flags} onChange={e=>setFlags(e.target.value.replace(/[^gimsuy]/g,''))} />
+            <Input  variant="simple" className="" placeholder="g i m s u y" value={flags} onChange={e=>setFlags(e.target.value.replace(/[^gimsuy]/g,''))} />
           </div>
           {error && <p className="text-sm text-red-600">{error}</p>}
           <div>
@@ -79,7 +80,7 @@ export default function Page() {
           </div>
           <div>
             <label className="block text-sm mb-1">替换模板</label>
-            <input className="w-full border rounded px-2 py-1 font-mono" value={replace} onChange={e=>setReplace(e.target.value)} />
+            <Input  variant="simple" className="" value={replace} onChange={e=>setReplace(e.target.value)} />
           </div>
         </div>
         <div className="space-y-3">

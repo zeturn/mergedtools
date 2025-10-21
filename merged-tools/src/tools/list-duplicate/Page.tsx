@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function splitList(text: string, sep: string){
   if (!sep) return text.split(/\s+/).filter(Boolean)
@@ -39,7 +40,7 @@ export default function Page(){
 
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-36" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-36" value={input} onChange={e=>setInput(e.target.value)} />
       <div className="grid md:grid-cols-3 gap-2 items-center">
         <input className="input" placeholder="分隔符(留空=空白)" value={sep} onChange={e=>setSep(e.target.value)} />
         <input className="input" placeholder="拼接符" value={join} onChange={e=>setJoin(e.target.value)} />

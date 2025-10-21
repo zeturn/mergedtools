@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Textarea } from '../components/Input'
 
 async function sha256(text: string) {
   const enc = new TextEncoder().encode(text)
@@ -29,8 +30,7 @@ export default function HashPage() {
       {/* Input section */}
       <div className="space-y-3">
         <label className="block text-sm text-slate-400">输入文本</label>
-        <textarea 
-          className="w-full h-32 rounded-lg bg-slate-900/50 border border-slate-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 p-4 transition-all outline-none resize-none" 
+        <Textarea 
           value={input} 
           onChange={(e) => setInput(e.target.value)}
           placeholder="请输入要计算哈希的文本..." 

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function split(input: string, sep: string){
   if(sep==='newline') return input.split(/\r?\n/)
@@ -30,7 +31,7 @@ export default function Page(){
   },[items,outSep,customOut])
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-44" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-44" value={input} onChange={e=>setInput(e.target.value)} />
       <div className="grid md:grid-cols-3 gap-2 text-sm">
         <label>输入分隔符<select className="select" value={inSep} onChange={e=>setInSep(e.target.value as any)}>
           <option value="newline">换行</option>
@@ -54,7 +55,7 @@ export default function Page(){
         </select></label>
         {outSep==='custom' && <input className="input" placeholder="自定义输出分隔符" value={customOut} onChange={e=>setCustomOut(e.target.value)} />}
       </div>
-      <textarea className="textarea h-44" readOnly value={out} />
+      <Textarea variant="simple" className="h-44" readOnly value={out} />
     </div>
   )
 }

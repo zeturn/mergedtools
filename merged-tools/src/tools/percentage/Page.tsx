@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page() {
   const [part, setPart] = useState('25')
@@ -29,19 +30,19 @@ export default function Page() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label className="flex items-center gap-2">
           <span className="w-20 text-sm text-gray-500">部分</span>
-          <input className="input flex-1" value={part} onChange={(e) => setPart(e.target.value)} />
+          <Input  variant="simple" value={part} onChange={(e) => setPart(e.target.value)} />
         </label>
         <label className="flex items-center gap-2">
           <span className="w-20 text-sm text-gray-500">整体</span>
-          <input className="input flex-1" value={whole} onChange={(e) => setWhole(e.target.value)} />
+          <Input  variant="simple" value={whole} onChange={(e) => setWhole(e.target.value)} />
         </label>
         <label className="flex items-center gap-2">
           <span className="w-20 text-sm text-gray-500">百分比 %</span>
-          <input className="input flex-1" value={percent} onChange={(e) => setPercent(e.target.value)} />
+          <Input  variant="simple" value={percent} onChange={(e) => setPercent(e.target.value)} />
         </label>
         <label className="flex items-center gap-2">
           <span className="w-20 text-sm text-gray-500">小数位</span>
-          <input className="input w-24" type="number" min={0} max={10} value={dec} onChange={(e) => setDec(Math.max(0, Math.min(10, Number(e.target.value))))} />
+          <Input  variant="simple" type="number" min={0} max={10} value={dec} onChange={(e) => setDec(Math.max(0, Math.min(10, Number(e.target.value))))} />
         </label>
       </div>
       <div className="text-sm text-gray-500">任意修改两项，第三项自动计算。</div>

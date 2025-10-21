@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function pad(n: number, w = 2) { return n.toString().padStart(w, '0') }
 
@@ -51,7 +52,7 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2">
-        <input className="input" type="datetime-local" value={target} onChange={(e)=>setTarget(e.target.value)} />
+        <Input  variant="simple" type="datetime-local" value={target} onChange={(e)=>setTarget(e.target.value)} />
         <button className="btn" onClick={share}>复制分享链接</button>
       </div>
       <div className="text-4xl font-mono">

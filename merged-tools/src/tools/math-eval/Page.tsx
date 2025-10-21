@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 type Token = { type: 'num' | 'op' | 'lparen' | 'rparen' | 'ident' | 'comma'; value: string }
 
@@ -201,7 +202,7 @@ export default function Page() {
     <div className="space-y-4">
       <div>
         <label className="text-sm text-gray-500">表达式</label>
-        <input className="input" value={expr} onChange={(e) => setExpr(e.target.value)} />
+        <Input  variant="simple" value={expr} onChange={(e) => setExpr(e.target.value)} />
         <div className="text-xs text-gray-500 mt-1">支持 + - * / ^, 括号, 函数: sin cos tan log ln sqrt abs round floor ceil min max; 常量: pi e</div>
       </div>
       <div className="rounded border p-3 bg-gray-50 dark:bg-gray-900/40">

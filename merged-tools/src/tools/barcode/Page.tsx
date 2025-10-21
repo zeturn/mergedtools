@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import JsBarcode from 'jsbarcode'
+import Input from '../../components/Input'
 
 export default function Page() {
   const [text, setText] = useState('123456789012')
@@ -12,7 +13,7 @@ export default function Page() {
   }, [text])
   return (
     <div className="space-y-3">
-      <input className="w-full rounded bg-slate-800 p-2" value={text} onChange={(e) => setText(e.target.value)} />
+      <Input  variant="simple" className="" value={text} onChange={(e) => setText(e.target.value)} />
       <div className="p-4 bg-white rounded inline-block">
         <svg ref={svgRef} />
       </div>

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('10 2 33 4')
@@ -16,7 +17,7 @@ export default function Page(){
   }, [input, sep, numeric, asc])
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-36" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-36" value={input} onChange={e=>setInput(e.target.value)} />
       <div className="flex flex-wrap gap-4 text-sm items-center">
         <input className="input w-40" placeholder="分隔符(留空=空白)" value={sep} onChange={e=>setSep(e.target.value)} />
         <label className="flex items-center gap-2"><input type="checkbox" checked={numeric} onChange={e=>setNumeric(e.target.checked)} /> 数字排序</label>

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page() {
   const [u, setU] = useState('https://user:pass@example.com:8080/path/name?foo=bar&foo=baz#hash')
@@ -19,7 +20,7 @@ export default function Page() {
 
   return (
     <div className="space-y-4">
-      <input className="w-full rounded bg-slate-800 p-2 font-mono" value={u} onChange={(e)=>setU(e.target.value)} placeholder="输入 URL" />
+      <Input  variant="simple" className="" value={u} onChange={(e)=>setU(e.target.value)} placeholder="输入 URL" />
       {!parsed.ok ? (
         <div className="text-red-400">{parsed.err}</div>
       ) : (

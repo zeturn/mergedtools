@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page(){
   const [days, setDays] = useState('1.5')
@@ -12,7 +13,7 @@ export default function Page(){
   }, [days])
   return (
     <div className="space-y-3">
-      <input className="input" value={days} onChange={e=>setDays(e.target.value)} />
+      <Input  variant="simple" value={days} onChange={e=>setDays(e.target.value)} />
       <div className="rounded border p-3 bg-gray-50 dark:bg-gray-900/40">{out}</div>
     </div>
   )

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('a b c d e f g')
@@ -14,10 +15,10 @@ export default function Page(){
   }, [input, sep, n, from])
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-36" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-36" value={input} onChange={e=>setInput(e.target.value)} />
       <div className="grid md:grid-cols-3 gap-2">
-        <input className="input" placeholder="分隔符(留空=空白)" value={sep} onChange={e=>setSep(e.target.value)} />
-        <input className="input" placeholder="N" value={n} onChange={e=>setN(e.target.value)} />
+        <Input  variant="simple" placeholder="分隔符(留空=空白)" value={sep} onChange={e=>setSep(e.target.value)} />
+        <Input  variant="simple" placeholder="N" value={n} onChange={e=>setN(e.target.value)} />
         <select className="input" value={from} onChange={e=>setFrom(e.target.value as any)}>
           <option value="head">前 N</option>
           <option value="tail">后 N</option>

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function toHMS(total: number){
   const sign = total < 0 ? '-' : ''
@@ -19,7 +20,7 @@ export default function Page(){
   }, [sec])
   return (
     <div className="space-y-3">
-      <input className="input" value={sec} onChange={e=>setSec(e.target.value)} />
+      <Input  variant="simple" value={sec} onChange={e=>setSec(e.target.value)} />
       <div className="rounded border p-3 bg-gray-50 dark:bg-gray-900/40 font-mono">{out}</div>
     </div>
   )

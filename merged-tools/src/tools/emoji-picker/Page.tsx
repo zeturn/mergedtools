@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 const EMOJIS = [
   { ch: '😀', n: 'grinning' }, { ch: '😁', n: 'beaming' }, { ch: '😂', n: 'joy' }, { ch: '🤣', n: 'rofl' },
@@ -26,7 +27,7 @@ export default function Page() {
 
   return (
     <div className="space-y-4">
-      <input className="input" placeholder="搜索名称（英文）" value={q} onChange={(e)=>setQ(e.target.value)} />
+      <Input  variant="simple" placeholder="搜索名称（英文）" value={q} onChange={(e)=>setQ(e.target.value)} />
       <div className="grid grid-cols-8 sm:grid-cols-10 md:grid-cols-12 gap-2">
         {filtered.map((e, i) => (
           <button key={i} className="h-12 rounded border flex items-center justify-center text-2xl hover:bg-gray-100 dark:hover:bg-gray-800" onClick={()=>onCopy(e.ch)} title={e.n}>

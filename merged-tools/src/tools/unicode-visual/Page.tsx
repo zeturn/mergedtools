@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function codepointInfo(ch: string) {
   const cp = ch.codePointAt(0) ?? 0
@@ -11,7 +12,7 @@ export default function Page() {
 
   return (
     <div className="space-y-4">
-      <textarea className="textarea h-32" value={text} onChange={(e)=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-32" value={text} onChange={(e)=>setText(e.target.value)} />
       <div className="overflow-auto border rounded">
         <table className="w-full text-sm">
           <thead className="bg-gray-100 dark:bg-gray-800"><tr><th className="p-2">字符</th><th>十进制</th><th>十六进制</th><th>NFC</th><th>NFD</th></tr></thead>

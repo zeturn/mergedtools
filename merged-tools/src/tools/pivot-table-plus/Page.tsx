@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Textarea } from '../../components/Input';
 
 function parseCSV(text: string): string[][] {
   return text.split(/\r?\n/).map(row => row.split(','));
@@ -15,7 +16,8 @@ export default function Page() {
   return (
     <div className="max-w-2xl mx-auto p-4">
       <h2 className="text-xl font-bold mb-2">数据透视表增强版</h2>
-      <textarea
+      <Textarea
+        variant="simple"
         className="w-full border rounded p-2 mb-2"
         rows={6}
         placeholder={"粘贴 CSV 数据（首行为表头）"}

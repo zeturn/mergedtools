@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import Input from '../components/Input'
 
 function toDate(input: string) {
   const n = Number(input)
@@ -52,8 +53,7 @@ export default function TimestampPage() {
       {/* Input section */}
       <div className="space-y-3">
         <label className="block text-sm text-slate-400">输入时间戳或日期字符串</label>
-        <input 
-          className="w-full rounded-lg bg-slate-900/50 border border-slate-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 p-4 font-mono transition-all outline-none" 
+        <Input  variant="simple" className="" 
           value={raw} 
           onChange={(e) => setRaw(e.target.value)}
           placeholder="例如: 1640995200 或 2022-01-01"

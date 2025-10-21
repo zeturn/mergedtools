@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import yaml from 'js-yaml'
+import { Textarea } from '../../components/Input'
 
 function tryDump(obj: any, indent: number, sortKeys: boolean) {
   try {
@@ -49,8 +50,7 @@ export default function Page() {
 
   return (
     <div className="space-y-3">
-      <textarea
-        className="textarea h-56"
+      <Textarea variant="simple" className="h-56"
         value={src}
         onChange={(e) => setSrc(e.target.value)}
         placeholder="在此粘贴 YAML 文本"
@@ -87,7 +87,7 @@ export default function Page() {
         <div className="text-red-400 text-sm">解析错误：{parsed.error}</div>
       )}
 
-      <textarea className="textarea h-56" value={out} readOnly placeholder="输出将显示在这里" />
+      <Textarea variant="simple" className="h-56" value={out} readOnly placeholder="输出将显示在这里" />
     </div>
   )
 }

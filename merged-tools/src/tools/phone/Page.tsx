@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 // 极简清理与E.164拼接（注意：未引入 libphonenumber，准确性有限）
 function normalize(raw: string) {
@@ -32,7 +33,7 @@ export default function Page() {
             <textarea className="w-full h-48 border rounded px-2 py-1 font-mono" value={input} onChange={e=>setInput(e.target.value)} />
           </div>
           <label className="text-sm">默认国家码
-            <input className="ml-2 w-24 border rounded px-2 py-1" value={defaultCC} onChange={e=>setDefaultCC(e.target.value)} />
+            <Input  variant="simple" className="" value={defaultCC} onChange={e=>setDefaultCC(e.target.value)} />
           </label>
         </div>
         <div className="space-y-2">

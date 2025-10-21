@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 type MetaState = {
   title: string
@@ -52,16 +53,16 @@ export default function Page() {
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">输入</h2>
         <div className="grid grid-cols-2 gap-3">
-          <L label="标题"><input className="input" value={s.title} onChange={e=>setS(v=>({ ...v, title: e.target.value }))} /></L>
-          <L label="站点名"><input className="input" value={s.siteName} onChange={e=>setS(v=>({ ...v, siteName: e.target.value }))} /></L>
-          <L label="URL"><input className="input" value={s.url} onChange={e=>setS(v=>({ ...v, url: e.target.value }))} /></L>
-          <L label="主题色"><input className="input" value={s.themeColor} onChange={e=>setS(v=>({ ...v, themeColor: e.target.value }))} /></L>
-          <L label="图标"><input className="input" value={s.icon} onChange={e=>setS(v=>({ ...v, icon: e.target.value }))} /></L>
-          <L label="OG 图片"><input className="input" value={s.image} onChange={e=>setS(v=>({ ...v, image: e.target.value }))} /></L>
-          <L label="关键词"><input className="input" value={s.keywords} onChange={e=>setS(v=>({ ...v, keywords: e.target.value }))} /></L>
+          <L label="标题"><Input  variant="simple" value={s.title} onChange={e=>setS(v=>({ ...v, title: e.target.value }))} /></L>
+          <L label="站点名"><Input  variant="simple" value={s.siteName} onChange={e=>setS(v=>({ ...v, siteName: e.target.value }))} /></L>
+          <L label="URL"><Input  variant="simple" value={s.url} onChange={e=>setS(v=>({ ...v, url: e.target.value }))} /></L>
+          <L label="主题色"><Input  variant="simple" value={s.themeColor} onChange={e=>setS(v=>({ ...v, themeColor: e.target.value }))} /></L>
+          <L label="图标"><Input  variant="simple" value={s.icon} onChange={e=>setS(v=>({ ...v, icon: e.target.value }))} /></L>
+          <L label="OG 图片"><Input  variant="simple" value={s.image} onChange={e=>setS(v=>({ ...v, image: e.target.value }))} /></L>
+          <L label="关键词"><Input  variant="simple" value={s.keywords} onChange={e=>setS(v=>({ ...v, keywords: e.target.value }))} /></L>
           <div className="col-span-2">
             <L label="描述">
-              <textarea className="textarea h-28" value={s.description} onChange={e=>setS(v=>({ ...v, description: e.target.value }))} />
+              <Textarea variant="simple" className="h-28" value={s.description} onChange={e=>setS(v=>({ ...v, description: e.target.value }))} />
             </L>
           </div>
         </div>

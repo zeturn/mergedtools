@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function fmtDateLocal(date: Date) {
   const y = date.getFullYear()
@@ -98,7 +99,7 @@ export default function Page() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <label className="text-sm text-gray-500">标题<input className="input" value={title} onChange={(e)=>setTitle(e.target.value)} /></label>
         <label className="text-sm text-gray-500">地点<input className="input" value={loc} onChange={(e)=>setLoc(e.target.value)} /></label>
-        <label className="text-sm text-gray-500 sm:col-span-2">描述<textarea className="textarea h-20" value={desc} onChange={(e)=>setDesc(e.target.value)} /></label>
+        <label className="text-sm text-gray-500 sm:col-span-2">描述<Textarea variant="simple" className="h-20" value={desc} onChange={(e)=>setDesc(e.target.value)} /></label>
       </div>
       <div className="flex flex-wrap items-center gap-3">
         <label className="flex items-center gap-2 text-sm text-gray-500"><input type="checkbox" checked={allDay} onChange={(e)=>setAllDay(e.target.checked)} /> 全天</label>

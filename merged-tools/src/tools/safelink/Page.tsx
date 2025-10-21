@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('')
@@ -15,7 +16,7 @@ export default function Page(){
 
   return (
     <div className="space-y-3">
-      <input className="w-full bg-slate-800 rounded p-2" placeholder="粘贴 safelink URL" value={input} onChange={(e)=>setInput(e.target.value)} />
+      <Input  variant="simple" className="" placeholder="粘贴 safelink URL" value={input} onChange={(e)=>setInput(e.target.value)} />
       <button className="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600" onClick={decode}>解码</button>
       <textarea className="w-full min-h-24 bg-slate-900 rounded p-2" value={output} onChange={(e)=>setOutput(e.target.value)} />
     </div>

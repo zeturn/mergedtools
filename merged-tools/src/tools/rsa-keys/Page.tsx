@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 async function genRsa(bits = 2048){
   return crypto.subtle.generateKey(
@@ -38,12 +39,12 @@ export default function Page(){
       <div className="grid md:grid-cols-2 gap-3">
         <div>
           <div className="text-sm text-gray-500 mb-1">公钥（SPKI PEM）</div>
-          <textarea className="textarea h-48" value={pub} readOnly />
+          <Textarea variant="simple" className="h-48" value={pub} readOnly />
           {pub && <button className="btn mt-2" onClick={()=>copy(pub)}>复制公钥</button>}
         </div>
         <div>
           <div className="text-sm text-gray-500 mb-1">私钥（PKCS#8 PEM）</div>
-          <textarea className="textarea h-48" value={pri} readOnly />
+          <Textarea variant="simple" className="h-48" value={pri} readOnly />
           {pri && <button className="btn mt-2" onClick={()=>copy(pri)}>复制私钥</button>}
         </div>
       </div>

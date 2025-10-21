@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import Papa from 'papaparse'
+import { Input, Textarea } from '../../components/Input'
 
 export default function Page(){
   const [input, setInput] = useState('id,name\n1,Alice\n2,Bob')
@@ -23,10 +24,10 @@ export default function Page(){
   return (
     <div className="space-y-4">
       <div className="grid md:grid-cols-2 gap-3">
-        <L label="根元素名"><input className="input" value={root} onChange={e=>setRoot(e.target.value)} /></L>
-        <L label="行元素名"><input className="input" value={row} onChange={e=>setRow(e.target.value)} /></L>
+        <L label="根元素名"><Input  variant="simple" value={root} onChange={e=>setRoot(e.target.value)} /></L>
+        <L label="行元素名"><Input  variant="simple" value={row} onChange={e=>setRow(e.target.value)} /></L>
       </div>
-      <textarea className="textarea h-48" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={input} onChange={e=>setInput(e.target.value)} />
       <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{xml}</pre>
     </div>
   )

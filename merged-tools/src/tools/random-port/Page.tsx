@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 const RESERVED = new Set<number>([
   // 0-1023 well-known; we avoid 0-1023 entirely by range filter
@@ -23,12 +24,12 @@ export default function Page(){
   return (
     <div className="space-y-3">
       <div className="grid md:grid-cols-4 gap-2">
-        <label className="flex items-center gap-2">数量<input className="input" type="number" value={count} onChange={e=>setCount(parseInt(e.target.value||'0'))} /></label>
-        <label className="flex items-center gap-2">最小<input className="input" type="number" value={min} onChange={e=>setMin(parseInt(e.target.value||'0'))} /></label>
-        <label className="flex items-center gap-2">最大<input className="input" type="number" value={max} onChange={e=>setMax(parseInt(e.target.value||'0'))} /></label>
+        <label className="flex items-center gap-2">数量<Input  variant="simple" type="number" value={count} onChange={e=>setCount(parseInt(e.target.value||'0'))} /></label>
+        <label className="flex items-center gap-2">最小<Input  variant="simple" type="number" value={min} onChange={e=>setMin(parseInt(e.target.value||'0'))} /></label>
+        <label className="flex items-center gap-2">最大<Input  variant="simple" type="number" value={max} onChange={e=>setMax(parseInt(e.target.value||'0'))} /></label>
         <button className="btn" disabled={!valid} onClick={()=>setList(gen(count,min,max))}>生成</button>
       </div>
-      {!!list.length && <textarea className="textarea h-48" readOnly value={list.join('\n')} />}
+      {!!list.length && <Textarea variant="simple" className="h-48" readOnly value={list.join('\n')} />}
       <div className="text-xs text-gray-500">提示：纯前端无法检测目标机器端口占用；此列表仅作建议，实际使用前请在目标环境验证可用性。</div>
     </div>
   )

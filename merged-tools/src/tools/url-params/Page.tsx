@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 export default function Page() {
   const [url, setUrl] = useState('https://example.com?a=1&b=2')
@@ -55,8 +56,8 @@ export default function Page() {
         )}
         <label className="flex items-center gap-2 text-sm text-gray-500"><input type="checkbox" checked={sortKeys} onChange={(e)=>setSortKeys(e.target.checked)} /> 按 key 排序</label>
       </div>
-      <textarea className="textarea h-40" value={paramLines} onChange={(e)=>setParamLines(e.target.value)} placeholder="key=value 每行一条" />
-      <textarea className="textarea h-32" value={result} readOnly />
+      <Textarea variant="simple" className="h-40" value={paramLines} onChange={(e)=>setParamLines(e.target.value)} placeholder="key=value 每行一条" />
+      <Textarea variant="simple" className="h-32" value={result} readOnly />
     </div>
   )
 }

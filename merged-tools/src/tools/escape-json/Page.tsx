@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function escapeJSON(s: string){
   return JSON.stringify(s)
@@ -18,7 +19,7 @@ export default function Page(){
   const out = useMemo(()=> mode==='escape' ? escapeJSON(text) : unescapeJSON(text), [text, mode])
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-40" value={text} onChange={e=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-40" value={text} onChange={e=>setText(e.target.value)} />
       <select className="input" value={mode} onChange={e=>setMode(e.target.value as any)}>
         <option value="escape">转义</option>
         <option value="unescape">反转义</option>

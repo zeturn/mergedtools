@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import * as Papa from 'papaparse'
+import { Textarea } from '../../components/Input'
 
 function swapCols(data: any[][], a: number, b: number) {
   return data.map((row) => {
@@ -61,7 +62,7 @@ export default function Page() {
         )}
       </div>
       <div className="grid md:grid-cols-2 gap-6">
-        <textarea className="textarea h-52" value={input} onChange={e=>setInput(e.target.value)} />
+        <Textarea variant="simple" className="h-52" value={input} onChange={e=>setInput(e.target.value)} />
         <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{output}</pre>
       </div>
     </div>

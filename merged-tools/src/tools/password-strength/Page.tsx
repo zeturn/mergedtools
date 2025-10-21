@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function estimateEntropy(pwd: string){
   if (!pwd) return { bits: 0, pool: 0 }
@@ -38,7 +39,7 @@ export default function Page(){
 
   return (
     <div className="space-y-4">
-      <input className="input" type="password" value={pwd} onChange={(e)=>setPwd(e.target.value)} placeholder="输入密码" />
+      <Input  variant="simple" type="password" value={pwd} onChange={(e)=>setPwd(e.target.value)} placeholder="输入密码" />
       <div className="space-y-1">
         <div className="h-2 w-full bg-slate-800 rounded">
           <div className={`h-2 rounded ${colors[score]}`} style={{ width: `${(score+1)*20}%` }} />

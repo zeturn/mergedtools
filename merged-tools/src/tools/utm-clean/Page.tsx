@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 const TRACK_PARAMS = new Set([
   'utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_id','utm_reader','utm_name','utm_cid','utm_brand','utm_social','utm_social-type',
@@ -45,10 +46,10 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <label className="text-sm">额外移除参数（逗号分隔）
-              <input className="mt-1 w-full border rounded px-2 py-1" value={extraStrip} onChange={e=>setExtraStrip(e.target.value)} />
+              <Input  variant="simple" className="" value={extraStrip} onChange={e=>setExtraStrip(e.target.value)} />
             </label>
             <label className="text-sm">强制保留参数（逗号分隔）
-              <input className="mt-1 w-full border rounded px-2 py-1" value={extraKeep} onChange={e=>setExtraKeep(e.target.value)} />
+              <Input  variant="simple" className="" value={extraKeep} onChange={e=>setExtraKeep(e.target.value)} />
             </label>
           </div>
         </div>

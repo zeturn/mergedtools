@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 function rotate<T>(arr: T[], k: number){
   const n = arr.length
@@ -19,10 +20,10 @@ export default function Page(){
   }, [input, sep, k])
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-36" value={input} onChange={e=>setInput(e.target.value)} />
+      <Textarea variant="simple" className="h-36" value={input} onChange={e=>setInput(e.target.value)} />
       <div className="grid md:grid-cols-2 gap-2">
-        <input className="input" placeholder="分隔符(留空=空白)" value={sep} onChange={e=>setSep(e.target.value)} />
-        <input className="input" placeholder="位移(可负)" value={k} onChange={e=>setK(e.target.value)} />
+        <Input  variant="simple" placeholder="分隔符(留空=空白)" value={sep} onChange={e=>setSep(e.target.value)} />
+        <Input  variant="simple" placeholder="位移(可负)" value={k} onChange={e=>setK(e.target.value)} />
       </div>
       <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{out}</pre>
     </div>

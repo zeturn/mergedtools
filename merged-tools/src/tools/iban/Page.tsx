@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 const LENGTH: Record<string, number> = {
   AD:24, AE:23, AL:28, AT:20, AZ:28, BA:20, BE:16, BG:22, BH:22, BR:29, BY:28, CH:21, CR:22, CY:28, CZ:24, DE:22, DK:18, DO:28,
@@ -14,7 +15,7 @@ export default function Page(){
 
   return (
     <div className="space-y-3">
-      <input className="w-full bg-slate-800 rounded p-2" value={input} onChange={(e)=>setInput(e.target.value)} />
+      <Input  variant="simple" className="" value={input} onChange={(e)=>setInput(e.target.value)} />
       <div className={`p-2 rounded ${res.valid? 'bg-emerald-800':'bg-rose-900'}`}>{res.valid? '有效 IBAN':'无效 IBAN'}</div>
       <pre className="bg-slate-900 p-3 rounded overflow-auto text-sm"><code>{JSON.stringify(res, null, 2)}</code></pre>
     </div>

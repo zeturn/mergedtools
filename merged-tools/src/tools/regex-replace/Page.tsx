@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page() {
   const [input, setInput] = useState('foo 123 bar 456')
@@ -18,9 +19,9 @@ export default function Page() {
     <div className="space-y-3">
       <textarea className="w-full h-32 rounded bg-slate-800 p-3 font-mono" value={input} onChange={(e)=>setInput(e.target.value)} />
       <div className="grid md:grid-cols-3 gap-3">
-        <input className="rounded bg-slate-800 p-2 font-mono" value={pattern} onChange={(e)=>setPattern(e.target.value)} placeholder="正则表达式" />
-        <input className="rounded bg-slate-800 p-2 font-mono" value={flags} onChange={(e)=>setFlags(e.target.value)} placeholder="标志，如 gmi" />
-        <input className="rounded bg-slate-800 p-2 font-mono" value={replacement} onChange={(e)=>setReplacement(e.target.value)} placeholder="替换模板，支持 $1 等" />
+        <Input  variant="simple" className="" value={pattern} onChange={(e)=>setPattern(e.target.value)} placeholder="正则表达式" />
+        <Input  variant="simple" className="" value={flags} onChange={(e)=>setFlags(e.target.value)} placeholder="标志，如 gmi" />
+        <Input  variant="simple" className="" value={replacement} onChange={(e)=>setReplacement(e.target.value)} placeholder="替换模板，支持 $1 等" />
       </div>
       <pre className="rounded bg-slate-800 p-3 font-mono whitespace-pre-wrap overflow-auto">{out}</pre>
     </div>

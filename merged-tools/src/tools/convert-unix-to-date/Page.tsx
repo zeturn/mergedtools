@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function toDateString(ts: number){
   const d = new Date(ts)
@@ -26,7 +27,7 @@ export default function Page(){
   return (
     <div className="space-y-3">
       <div className="grid md:grid-cols-3 gap-2">
-        <input className="input" value={ts} onChange={e=>setTs(e.target.value)} />
+        <Input  variant="simple" value={ts} onChange={e=>setTs(e.target.value)} />
         <select className="input" value={unit} onChange={e=>setUnit(e.target.value as any)}>
           <option value="auto">自动判断</option>
           <option value="seconds">秒</option>

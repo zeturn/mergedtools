@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 type Scure = typeof import('@scure/bip39')
 
@@ -126,7 +127,7 @@ export default function Page(){
       </section>
       <section className="space-y-2">
         <div className="text-sm text-slate-400">可选 Passphrase（BIP39）</div>
-        <input className="rounded bg-slate-800 p-2" value={passphrase} onChange={(e)=>setPassphrase(e.target.value)} />
+        <Input  variant="simple" className="" value={passphrase} onChange={(e)=>setPassphrase(e.target.value)} />
         <div className="flex gap-2">
           <button className="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600" onClick={toSeed}>导出 Seed</button>
         </div>
@@ -135,7 +136,7 @@ export default function Page(){
       <section className="space-y-2">
         <div className="text-sm text-slate-400">BIP32/44 路径派生</div>
         <div className="flex gap-2 items-center flex-wrap">
-          <input className="rounded bg-slate-800 p-2 w-[24rem]" value={path} onChange={(e)=>setPath(e.target.value)} />
+          <Input  variant="simple" className="" value={path} onChange={(e)=>setPath(e.target.value)} />
           <button className="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600" onClick={derive}>派生</button>
         </div>
         {(xpub||xprv) && (

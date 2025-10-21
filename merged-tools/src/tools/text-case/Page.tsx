@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function words(s: string) {
   return s.trim().split(/[^A-Za-z0-9]+/).filter(Boolean)
@@ -27,7 +28,7 @@ export default function Page() {
   const camel = useMemo(() => camelCase(txt), [txt])
   return (
     <div className="space-y-3">
-      <input className="w-full rounded bg-slate-800 p-2" value={txt} onChange={(e) => setTxt(e.target.value)} />
+      <Input  variant="simple" className="" value={txt} onChange={(e) => setTxt(e.target.value)} />
       <div className="grid md:grid-cols-2 gap-3 font-mono text-sm">
         <div className="rounded bg-slate-800 p-2">UPPER: {upper}</div>
         <div className="rounded bg-slate-800 p-2">lower: {lower}</div>

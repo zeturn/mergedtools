@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 const LOOKS_LIKE: Record<string, string> = {
   A: 'Α', a: 'ɑ', B: 'Β', E: 'Ε', e: 'ｅ', H: 'Η', I: 'Ι', i: 'і', K: 'Κ', M: 'Μ', N: 'Ν', O: 'Ο', o: 'ο', P: 'Ρ', T: 'Τ', X: 'Χ', Y: 'Υ',
@@ -34,7 +35,7 @@ export default function Page() {
 
   return (
     <div className="space-y-4">
-      <textarea className="textarea h-28" value={src} onChange={(e)=>setSrc(e.target.value)} />
+      <Textarea variant="simple" className="h-28" value={src} onChange={(e)=>setSrc(e.target.value)} />
       <div className="flex flex-wrap items-center gap-2">
         <select className="select" value={mode} onChange={(e)=>setMode(e.target.value as any)}>
           <option value="similar">相似字符替换</option>
@@ -42,10 +43,10 @@ export default function Page() {
           <option value="insert">随机插入零宽字符</option>
         </select>
         {mode === 'insert' && (
-          <label className="flex items-center gap-2 text-sm text-gray-500">seed<input className="input w-24" type="number" value={seed} onChange={(e)=>setSeed(Number(e.target.value)||0)} /></label>
+          <label className="flex items-center gap-2 text-sm text-gray-500">seed<Input  variant="simple" type="number" value={seed} onChange={(e)=>setSeed(Number(e.target.value)||0)} /></label>
         )}
       </div>
-      <textarea className="textarea h-28" value={dst} readOnly />
+      <Textarea variant="simple" className="h-28" value={dst} readOnly />
       <div className="text-xs text-gray-500">注意：仅用于弱混淆展示，不提供安全性。</div>
     </div>
   )

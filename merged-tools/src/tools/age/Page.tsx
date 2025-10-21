@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function diffYMD(birth: Date, now: Date) {
   let y = now.getFullYear() - birth.getFullYear()
@@ -45,7 +46,7 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2">
-        <input className="input" type="date" value={birthday} onChange={(e)=>setBirthday(e.target.value)} />
+        <Input  variant="simple" type="date" value={birthday} onChange={(e)=>setBirthday(e.target.value)} />
       </div>
       {calc && (
         <div className="rounded border p-3 bg-gray-50 dark:bg-gray-900/40 space-y-1">

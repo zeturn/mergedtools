@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 const zones = ['UTC','Asia/Shanghai','America/New_York','Europe/London','Asia/Tokyo']
 
@@ -18,7 +19,7 @@ export default function Page() {
 
   return (
     <div className="space-y-3">
-      <input className="w-full rounded bg-slate-800 p-2 font-mono" value={iso} onChange={(e)=>setIso(e.target.value)} />
+      <Input  variant="simple" className="" value={iso} onChange={(e)=>setIso(e.target.value)} />
       <div className="grid md:grid-cols-2 gap-3">
         <select className="rounded bg-slate-800 p-2" value={from} onChange={(e)=>setFrom(e.target.value)}>{zones.map(z=> <option key={z}>{z}</option>)}</select>
         <select className="rounded bg-slate-800 p-2" value={to} onChange={(e)=>setTo(e.target.value)}>{zones.map(z=> <option key={z}>{z}</option>)}</select>

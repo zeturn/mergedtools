@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 type Mode =
   | 'first-char'
@@ -93,8 +94,7 @@ export default function Page() {
 
   return (
     <div className="space-y-3">
-      <textarea
-        className="textarea h-36"
+      <Textarea variant="simple" className="h-36"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />

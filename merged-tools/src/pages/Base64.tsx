@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../components/Input'
 
 function base64Encode(text: string) {
   try {
@@ -38,8 +39,7 @@ export default function Base64Page() {
         </div>
         <div className="space-y-3">
           <label className="block text-sm text-slate-400">输入文本</label>
-          <textarea 
-            className="w-full h-32 rounded-lg bg-slate-900/50 border border-slate-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 p-4 transition-all outline-none resize-none" 
+          <Textarea 
             value={input} 
             onChange={(e) => setInput(e.target.value)}
             placeholder="请输入要编码的文本..." 
@@ -69,8 +69,8 @@ export default function Base64Page() {
         </div>
         <div className="space-y-3">
           <label className="block text-sm text-slate-400">Base64 输入</label>
-          <textarea 
-            className="w-full h-32 rounded-lg bg-slate-900/50 border border-slate-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 p-4 transition-all outline-none resize-none font-mono text-sm" 
+          <Textarea 
+            className="font-mono text-sm"
             value={b64} 
             onChange={(e) => setB64(e.target.value)}
             placeholder="请输入要解码的 Base64 字符串..." 

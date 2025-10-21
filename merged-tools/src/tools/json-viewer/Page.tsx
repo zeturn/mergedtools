@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [text, setText] = useState('{"name":"Alice","skills":["ts","react"],"info":{"age":30}}')
@@ -10,7 +11,7 @@ export default function Page(){
     <div className="grid lg:grid-cols-2 gap-6">
       <section className="space-y-2">
         <h2 className="text-xl font-semibold">输入 JSON</h2>
-        <textarea className="textarea h-72" value={text} onChange={e=>setText(e.target.value)} />
+        <Textarea variant="simple" className="h-72" value={text} onChange={e=>setText(e.target.value)} />
       </section>
       <section className="space-y-2">
         <h2 className="text-xl font-semibold">树形查看</h2>

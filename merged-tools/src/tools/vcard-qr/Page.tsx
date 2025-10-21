@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page() {
   const [fn, setFn] = useState('Ada Lovelace')
@@ -42,12 +43,12 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-        <label className="text-sm text-gray-500">姓名<input className="input" value={fn} onChange={(e)=>setFn(e.target.value)} /></label>
-        <label className="text-sm text-gray-500">公司<input className="input" value={org} onChange={(e)=>setOrg(e.target.value)} /></label>
-        <label className="text-sm text-gray-500">职位<input className="input" value={title} onChange={(e)=>setTitle(e.target.value)} /></label>
-        <label className="text-sm text-gray-500">电话<input className="input" value={tel} onChange={(e)=>setTel(e.target.value)} /></label>
-        <label className="text-sm text-gray-500">邮箱<input className="input" value={email} onChange={(e)=>setEmail(e.target.value)} /></label>
-        <label className="text-sm text-gray-500">网站<input className="input" value={url} onChange={(e)=>setUrl(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">姓名<Input  variant="simple" value={fn} onChange={(e)=>setFn(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">公司<Input  variant="simple" value={org} onChange={(e)=>setOrg(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">职位<Input  variant="simple" value={title} onChange={(e)=>setTitle(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">电话<Input  variant="simple" value={tel} onChange={(e)=>setTel(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">邮箱<Input  variant="simple" value={email} onChange={(e)=>setEmail(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">网站<Input  variant="simple" value={url} onChange={(e)=>setUrl(e.target.value)} /></label>
       </div>
       <div className="flex gap-2">
         <button className="btn" onClick={renderQR}>生成二维码</button>

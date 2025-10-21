@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 export default function Page(){
   const [title, setTitle] = useState('My Page Title')
@@ -26,11 +27,11 @@ export default function Page(){
   return (
     <div className="space-y-3">
       <div className="grid md:grid-cols-2 gap-3">
-        <input className="bg-slate-800 rounded p-2" value={title} onChange={(e)=>setTitle(e.target.value)} placeholder="Title" />
-        <input className="bg-slate-800 rounded p-2" value={desc} onChange={(e)=>setDesc(e.target.value)} placeholder="Description" />
-        <input className="bg-slate-800 rounded p-2" value={url} onChange={(e)=>setUrl(e.target.value)} placeholder="URL" />
-        <input className="bg-slate-800 rounded p-2" value={image} onChange={(e)=>setImage(e.target.value)} placeholder="Image URL" />
-        <input className="bg-slate-800 rounded p-2" value={site} onChange={(e)=>setSite(e.target.value)} placeholder="Twitter @site" />
+        <Input  variant="simple" className="" value={title} onChange={(e)=>setTitle(e.target.value)} placeholder="Title" />
+        <Input  variant="simple" className="" value={desc} onChange={(e)=>setDesc(e.target.value)} placeholder="Description" />
+        <Input  variant="simple" className="" value={url} onChange={(e)=>setUrl(e.target.value)} placeholder="URL" />
+        <Input  variant="simple" className="" value={image} onChange={(e)=>setImage(e.target.value)} placeholder="Image URL" />
+        <Input  variant="simple" className="" value={site} onChange={(e)=>setSite(e.target.value)} placeholder="Twitter @site" />
       </div>
       <pre className="bg-slate-900 p-3 rounded overflow-auto text-sm"><code>{html}</code></pre>
       <button className="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600" onClick={copy}>复制 meta 片段</button>

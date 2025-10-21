@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 export default function Page() {
   const [text, setText] = useState('你好，世界！Hello world!')
@@ -38,15 +39,15 @@ export default function Page() {
           </select>
         </label>
         <label className="flex items-center gap-2 text-sm text-gray-500">速率
-          <input className="input" type="range" min={0.5} max={2} step={0.1} value={rate} onChange={(e)=>setRate(Number(e.target.value))} />
+          <Input  variant="simple" type="range" min={0.5} max={2} step={0.1} value={rate} onChange={(e)=>setRate(Number(e.target.value))} />
           <span>{rate.toFixed(1)}</span>
         </label>
         <label className="flex items-center gap-2 text-sm text-gray-500">音调
-          <input className="input" type="range" min={0} max={2} step={0.1} value={pitch} onChange={(e)=>setPitch(Number(e.target.value))} />
+          <Input  variant="simple" type="range" min={0} max={2} step={0.1} value={pitch} onChange={(e)=>setPitch(Number(e.target.value))} />
           <span>{pitch.toFixed(1)}</span>
         </label>
       </div>
-      <textarea className="textarea h-40" value={text} onChange={(e)=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-40" value={text} onChange={(e)=>setText(e.target.value)} />
       <div className="flex gap-2">
         <button className="btn" onClick={speak}>播放</button>
         <button className="btn" onClick={pause}>暂停</button>

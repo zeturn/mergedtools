@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 function toNumeronym(word: string) {
   if (word.length <= 3) return word
@@ -10,8 +11,8 @@ export default function Page() {
   const out = useMemo(() => text.split(/\r?\n/).map(w => toNumeronym(w.trim())).join('\n'), [text])
   return (
     <div className="space-y-4">
-      <textarea className="textarea h-40" value={text} onChange={(e)=>setText(e.target.value)} />
-      <textarea className="textarea h-40" value={out} readOnly />
+      <Textarea variant="simple" className="h-40" value={text} onChange={(e)=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-40" value={out} readOnly />
     </div>
   )
 }

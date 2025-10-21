@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 function truncate(dateStr: string, unit: 'hour'|'minute'|'second'){
   const d = new Date(dateStr || Date.now())
@@ -15,7 +16,7 @@ export default function Page(){
   const out = useMemo(()=> truncate(input, unit), [input, unit])
   return (
     <div className="space-y-3">
-      <input className="input" value={input} onChange={e=>setInput(e.target.value)} />
+      <Input  variant="simple" value={input} onChange={e=>setInput(e.target.value)} />
       <select className="input w-full md:w-auto" value={unit} onChange={e=>setUnit(e.target.value as any)}>
         <option value="hour">整点</option>
         <option value="minute">整分</option>

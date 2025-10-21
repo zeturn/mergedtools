@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import Input from '../../components/Input'
 
 type Mode = 'unix-seconds' | 'unix-millis' | 'iso' | 'local-components'
 
@@ -71,7 +72,7 @@ export default function Page(){
           <option value="iso">输入：ISO 字符串</option>
           <option value="local-components">输入：本地组件(YYYY-MM-DD HH:mm:ss)</option>
         </select>
-        <input className="input" value={value} onChange={e=>setValue(e.target.value)} />
+        <Input  variant="simple" value={value} onChange={e=>setValue(e.target.value)} />
         <button className="btn" onClick={()=>{ setValue(String(Math.floor(Date.now()/1000))); setMode('unix-seconds') }}>使用当前时间</button>
       </div>
       <div className="grid md:grid-cols-2 gap-4">

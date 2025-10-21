@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [json, setJson] = useState('{"hello":"world"}')
@@ -12,8 +13,8 @@ export default function Page(){
   }, [json])
   return (
     <div className="grid md:grid-cols-2 gap-6">
-      <textarea className="textarea h-48" value={json} onChange={e=>setJson(e.target.value)} />
-      <textarea className="textarea h-48" value={String(out)} readOnly />
+      <Textarea variant="simple" className="h-48" value={json} onChange={e=>setJson(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={String(out)} readOnly />
     </div>
   )
 }

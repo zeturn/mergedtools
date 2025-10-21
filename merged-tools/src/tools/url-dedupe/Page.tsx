@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Input, Textarea } from '../../components/Input'
 
 export default function Page() {
   const [input, setInput] = useState('https://example.com?a=1\nhttps://example.com\nhttps://other.com/path')
@@ -32,12 +33,12 @@ export default function Page() {
     <div className="space-y-4">
       <div className="flex gap-2">
         <label className="flex items-center gap-2">模式<select className="select" value={mode} onChange={(e)=>setMode(e.target.value as any)}><option value="exact">按完整 URL 去重</option><option value="byDomain">按域名保留一条</option></select></label>
-        <label className="text-sm text-gray-500">白名单域（逗号分隔）<input className="input" value={white} onChange={(e)=>setWhite(e.target.value)} /></label>
-        <label className="text-sm text-gray-500">黑名单域（逗号分隔）<input className="input" value={black} onChange={(e)=>setBlack(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">白名单域（逗号分隔）<Input  variant="simple" value={white} onChange={(e)=>setWhite(e.target.value)} /></label>
+        <label className="text-sm text-gray-500">黑名单域（逗号分隔）<Input  variant="simple" value={black} onChange={(e)=>setBlack(e.target.value)} /></label>
       </div>
       <div className="grid sm:grid-cols-2 gap-2">
-        <textarea className="textarea h-48" value={input} onChange={(e)=>setInput(e.target.value)} />
-        <textarea className="textarea h-48" value={out} readOnly />
+        <Textarea variant="simple" className="h-48" value={input} onChange={(e)=>setInput(e.target.value)} />
+        <Textarea variant="simple" className="h-48" value={out} readOnly />
       </div>
       <button className="btn" onClick={copy}>复制结果</button>
     </div>

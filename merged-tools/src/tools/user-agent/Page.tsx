@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 type UAInfo = {
   browser: { name: string, version?: string },
@@ -68,7 +69,7 @@ export default function Page(){
   useEffect(()=>{ setUa(navigator.userAgent) },[])
   return (
     <div className="space-y-3">
-      <textarea className="textarea h-28" value={ua} onChange={e=>setUa(e.target.value)} />
+      <Textarea variant="simple" className="h-28" value={ua} onChange={e=>setUa(e.target.value)} />
       <div className="grid md:grid-cols-2 gap-3 text-sm">
         <div className="card p-3">
           <div className="font-medium">浏览器</div>

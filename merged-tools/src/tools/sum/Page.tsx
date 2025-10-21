@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Textarea } from '../../components/Input'
 
 export default function Page(){
   const [text, setText] = useState('1 2 3 4 5')
@@ -14,7 +15,7 @@ export default function Page(){
 
   return (
     <div className="grid md:grid-cols-2 gap-6">
-      <textarea className="textarea h-48" value={text} onChange={e=>setText(e.target.value)} />
+      <Textarea variant="simple" className="h-48" value={text} onChange={e=>setText(e.target.value)} />
       <pre className="rounded bg-slate-800 p-3 font-mono text-sm whitespace-pre-wrap break-words">{out}</pre>
     </div>
   )
