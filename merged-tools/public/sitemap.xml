@@ -56,37 +56,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/base32</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/base45</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/base58</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/base62</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/base64</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/base64-file</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/base85</loc>
+    <loc>/base-encoder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -197,6 +167,21 @@
   </url>
   <url>
     <loc>/cron-builder</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/css-animation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/css-filter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/css-gradient</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -316,7 +301,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>/flexbox-generator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>/float-ieee754</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/font-preview</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -786,6 +781,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>/responsive-preview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>/resvg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -847,6 +847,11 @@
   </url>
   <url>
     <loc>/swap-csv-columns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/tailwind-config</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
