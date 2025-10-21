@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function parseCSV(text: string): string[][] {
   return text.split(/\r?\n/).map(row => row.split(','));
