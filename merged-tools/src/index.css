@@ -102,3 +102,83 @@ button, a, input, textarea {
   transform: translateY(-2px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
+
+/* 统一的表单元素样式 */
+.input, .textarea, .select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(15, 23, 42, 0.5); /* slate-900/50 */
+  border: 1px solid rgb(51, 65, 85); /* slate-700 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: #e2e8f0; /* slate-200 */
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  border-color: rgb(99, 102, 241); /* indigo-500 */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: rgb(148, 163, 184); /* slate-400 */
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23e2e8f0' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+/* 统一的按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgb(51, 65, 85); /* slate-700 */
+  color: #e2e8f0; /* slate-200 */
+  border: 1px solid rgb(71, 85, 105); /* slate-600 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(71, 85, 105); /* slate-600 */
+  border-color: rgb(100, 116, 139); /* slate-500 */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, rgb(99, 102, 241) 0%, rgb(139, 92, 246) 100%); /* indigo-500 to violet-500 */
+  border-color: rgb(99, 102, 241);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, rgb(79, 70, 229) 0%, rgb(124, 58, 237) 100%); /* indigo-600 to violet-600 */
+  border-color: rgb(79, 70, 229);
+}
+
