@@ -21,7 +21,9 @@ async function getToolIds() {
   return ids.sort()
 }
 
-const base = '' // root-relative URLs; if you deploy under subpath, replace here or make it an env
+// Use environment variable or default site URL
+const SITE_URL = process.env.SITE_URL || 'https://tools.hollowdata.com'
+const base = SITE_URL // Full URL with protocol and domain
 
 function xml(links) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${links.join('\n')}\n</urlset>\n`

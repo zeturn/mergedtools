@@ -1,1092 +1,1092 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
+    <loc>https://tools.hollowdata.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>/menu</loc>
+    <loc>https://tools.hollowdata.com/menu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/shortcuts</loc>
+    <loc>https://tools.hollowdata.com/shortcuts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/aes-rsa</loc>
+    <loc>https://tools.hollowdata.com/aes-rsa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/age</loc>
+    <loc>https://tools.hollowdata.com/age</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/arithmetic-sequence</loc>
+    <loc>https://tools.hollowdata.com/arithmetic-sequence</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/ascii-art</loc>
+    <loc>https://tools.hollowdata.com/ascii-art</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/audio</loc>
+    <loc>https://tools.hollowdata.com/audio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/barcode</loc>
+    <loc>https://tools.hollowdata.com/barcode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/barcode-batch</loc>
+    <loc>https://tools.hollowdata.com/barcode-batch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/base-convert</loc>
+    <loc>https://tools.hollowdata.com/base-convert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/base-encoder</loc>
+    <loc>https://tools.hollowdata.com/base-encoder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/basic-auth</loc>
+    <loc>https://tools.hollowdata.com/basic-auth</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/bcrypt</loc>
+    <loc>https://tools.hollowdata.com/bcrypt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/benchmark</loc>
+    <loc>https://tools.hollowdata.com/benchmark</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/binary-encodings</loc>
+    <loc>https://tools.hollowdata.com/binary-encodings</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/bip39</loc>
+    <loc>https://tools.hollowdata.com/bip39</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/bytes</loc>
+    <loc>https://tools.hollowdata.com/bytes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/calibre-convert</loc>
+    <loc>https://tools.hollowdata.com/calibre-convert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/camera-recorder</loc>
+    <loc>https://tools.hollowdata.com/camera-recorder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/change-csv-separator</loc>
+    <loc>https://tools.hollowdata.com/change-csv-separator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/chart-generator</loc>
+    <loc>https://tools.hollowdata.com/chart-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/check-leap-years</loc>
+    <loc>https://tools.hollowdata.com/check-leap-years</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/chmod</loc>
+    <loc>https://tools.hollowdata.com/chmod</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/chronometer</loc>
+    <loc>https://tools.hollowdata.com/chronometer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/color</loc>
+    <loc>https://tools.hollowdata.com/color</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/color-convert</loc>
+    <loc>https://tools.hollowdata.com/color-convert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/convert-days-to-hours</loc>
+    <loc>https://tools.hollowdata.com/convert-days-to-hours</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/convert-hours-to-days</loc>
+    <loc>https://tools.hollowdata.com/convert-hours-to-days</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/convert-seconds-to-time</loc>
+    <loc>https://tools.hollowdata.com/convert-seconds-to-time</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/convert-time-to-seconds</loc>
+    <loc>https://tools.hollowdata.com/convert-time-to-seconds</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/convert-unix-to-date</loc>
+    <loc>https://tools.hollowdata.com/convert-unix-to-date</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/countdown</loc>
+    <loc>https://tools.hollowdata.com/countdown</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/cron</loc>
+    <loc>https://tools.hollowdata.com/cron</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/cron-builder</loc>
+    <loc>https://tools.hollowdata.com/cron-builder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/css-animation</loc>
+    <loc>https://tools.hollowdata.com/css-animation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/css-filter</loc>
+    <loc>https://tools.hollowdata.com/css-filter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/css-gradient</loc>
+    <loc>https://tools.hollowdata.com/css-gradient</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/csv-json</loc>
+    <loc>https://tools.hollowdata.com/csv-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/csv-pivot</loc>
+    <loc>https://tools.hollowdata.com/csv-pivot</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/csv-to-tsv</loc>
+    <loc>https://tools.hollowdata.com/csv-to-tsv</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/csv-to-xml</loc>
+    <loc>https://tools.hollowdata.com/csv-to-xml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/csv-to-yaml</loc>
+    <loc>https://tools.hollowdata.com/csv-to-yaml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/currency</loc>
+    <loc>https://tools.hollowdata.com/currency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/dasel</loc>
+    <loc>https://tools.hollowdata.com/dasel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/data-stats</loc>
+    <loc>https://tools.hollowdata.com/data-stats</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/date-diff</loc>
+    <loc>https://tools.hollowdata.com/date-diff</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/date-time-converter</loc>
+    <loc>https://tools.hollowdata.com/date-time-converter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/device-info</loc>
+    <loc>https://tools.hollowdata.com/device-info</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/docker-run-compose</loc>
+    <loc>https://tools.hollowdata.com/docker-run-compose</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/dvisvgm</loc>
+    <loc>https://tools.hollowdata.com/dvisvgm</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/email-normalizer</loc>
+    <loc>https://tools.hollowdata.com/email-normalizer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/emoji-picker</loc>
+    <loc>https://tools.hollowdata.com/emoji-picker</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/escape-json</loc>
+    <loc>https://tools.hollowdata.com/escape-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/eta</loc>
+    <loc>https://tools.hollowdata.com/eta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/exif</loc>
+    <loc>https://tools.hollowdata.com/exif</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/exif-batch</loc>
+    <loc>https://tools.hollowdata.com/exif-batch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/exif-sanitize</loc>
+    <loc>https://tools.hollowdata.com/exif-sanitize</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/extract-substring</loc>
+    <loc>https://tools.hollowdata.com/extract-substring</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/favicon</loc>
+    <loc>https://tools.hollowdata.com/favicon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/file-hash</loc>
+    <loc>https://tools.hollowdata.com/file-hash</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/find-incomplete-csv-records</loc>
+    <loc>https://tools.hollowdata.com/find-incomplete-csv-records</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/flexbox-generator</loc>
+    <loc>https://tools.hollowdata.com/flexbox-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/float-ieee754</loc>
+    <loc>https://tools.hollowdata.com/float-ieee754</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/font-preview</loc>
+    <loc>https://tools.hollowdata.com/font-preview</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/generic-calc</loc>
+    <loc>https://tools.hollowdata.com/generic-calc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/git-cheatsheet</loc>
+    <loc>https://tools.hollowdata.com/git-cheatsheet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/graphicsmagick</loc>
+    <loc>https://tools.hollowdata.com/graphicsmagick</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/hash</loc>
+    <loc>https://tools.hollowdata.com/hash</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/hash-extra</loc>
+    <loc>https://tools.hollowdata.com/hash-extra</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/hash-text</loc>
+    <loc>https://tools.hollowdata.com/hash-text</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/hex-dump</loc>
+    <loc>https://tools.hollowdata.com/hex-dump</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/hmac</loc>
+    <loc>https://tools.hollowdata.com/hmac</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/html-entities</loc>
+    <loc>https://tools.hollowdata.com/html-entities</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/html-to-markdown</loc>
+    <loc>https://tools.hollowdata.com/html-to-markdown</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/http-status</loc>
+    <loc>https://tools.hollowdata.com/http-status</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/iban</loc>
+    <loc>https://tools.hollowdata.com/iban</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/ics-event</loc>
+    <loc>https://tools.hollowdata.com/ics-event</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/image-compress</loc>
+    <loc>https://tools.hollowdata.com/image-compress</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/image-convert</loc>
+    <loc>https://tools.hollowdata.com/image-convert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/image-crop</loc>
+    <loc>https://tools.hollowdata.com/image-crop</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/image-resize</loc>
+    <loc>https://tools.hollowdata.com/image-resize</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/image-watermark</loc>
+    <loc>https://tools.hollowdata.com/image-watermark</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/imagemagick</loc>
+    <loc>https://tools.hollowdata.com/imagemagick</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/inkscape</loc>
+    <loc>https://tools.hollowdata.com/inkscape</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/insert-csv-columns</loc>
+    <loc>https://tools.hollowdata.com/insert-csv-columns</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/ipv4-tools</loc>
+    <loc>https://tools.hollowdata.com/ipv4-tools</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/ipv6-ula</loc>
+    <loc>https://tools.hollowdata.com/ipv6-ula</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-csv</loc>
+    <loc>https://tools.hollowdata.com/json-csv</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-diff</loc>
+    <loc>https://tools.hollowdata.com/json-diff</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-format</loc>
+    <loc>https://tools.hollowdata.com/json-format</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-minify</loc>
+    <loc>https://tools.hollowdata.com/json-minify</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-schema</loc>
+    <loc>https://tools.hollowdata.com/json-schema</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-stringify</loc>
+    <loc>https://tools.hollowdata.com/json-stringify</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-to-toml</loc>
+    <loc>https://tools.hollowdata.com/json-to-toml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-to-xml</loc>
+    <loc>https://tools.hollowdata.com/json-to-xml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-to-yaml</loc>
+    <loc>https://tools.hollowdata.com/json-to-yaml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/json-viewer</loc>
+    <loc>https://tools.hollowdata.com/json-viewer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/jsonpath</loc>
+    <loc>https://tools.hollowdata.com/jsonpath</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/jwt-decode</loc>
+    <loc>https://tools.hollowdata.com/jwt-decode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/jwt-verify</loc>
+    <loc>https://tools.hollowdata.com/jwt-verify</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/keycode</loc>
+    <loc>https://tools.hollowdata.com/keycode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/libheif</loc>
+    <loc>https://tools.hollowdata.com/libheif</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/libjxl</loc>
+    <loc>https://tools.hollowdata.com/libjxl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/libreoffice-convert</loc>
+    <loc>https://tools.hollowdata.com/libreoffice-convert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-converter</loc>
+    <loc>https://tools.hollowdata.com/list-converter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-duplicate</loc>
+    <loc>https://tools.hollowdata.com/list-duplicate</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-find-most-popular</loc>
+    <loc>https://tools.hollowdata.com/list-find-most-popular</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-find-unique</loc>
+    <loc>https://tools.hollowdata.com/list-find-unique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-group</loc>
+    <loc>https://tools.hollowdata.com/list-group</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-reverse</loc>
+    <loc>https://tools.hollowdata.com/list-reverse</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-rotate</loc>
+    <loc>https://tools.hollowdata.com/list-rotate</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-shuffle</loc>
+    <loc>https://tools.hollowdata.com/list-shuffle</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-sort</loc>
+    <loc>https://tools.hollowdata.com/list-sort</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-truncate</loc>
+    <loc>https://tools.hollowdata.com/list-truncate</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-unwrap</loc>
+    <loc>https://tools.hollowdata.com/list-unwrap</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/list-wrap</loc>
+    <loc>https://tools.hollowdata.com/list-wrap</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/lorem</loc>
+    <loc>https://tools.hollowdata.com/lorem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/mac-gen</loc>
+    <loc>https://tools.hollowdata.com/mac-gen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/mac-oui</loc>
+    <loc>https://tools.hollowdata.com/mac-oui</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/markdown</loc>
+    <loc>https://tools.hollowdata.com/markdown</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/markdown-editor</loc>
+    <loc>https://tools.hollowdata.com/markdown-editor</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/markdown-table</loc>
+    <loc>https://tools.hollowdata.com/markdown-table</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/markdown-to-html</loc>
+    <loc>https://tools.hollowdata.com/markdown-to-html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/markdown-toc</loc>
+    <loc>https://tools.hollowdata.com/markdown-toc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/math-eval</loc>
+    <loc>https://tools.hollowdata.com/math-eval</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/meta-tag-generator</loc>
+    <loc>https://tools.hollowdata.com/meta-tag-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/mime-types</loc>
+    <loc>https://tools.hollowdata.com/mime-types</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/minify</loc>
+    <loc>https://tools.hollowdata.com/minify</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/morse</loc>
+    <loc>https://tools.hollowdata.com/morse</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/msgconvert</loc>
+    <loc>https://tools.hollowdata.com/msgconvert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/nanoid</loc>
+    <loc>https://tools.hollowdata.com/nanoid</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/nato</loc>
+    <loc>https://tools.hollowdata.com/nato</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/numeronym</loc>
+    <loc>https://tools.hollowdata.com/numeronym</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/og-meta</loc>
+    <loc>https://tools.hollowdata.com/og-meta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/otp</loc>
+    <loc>https://tools.hollowdata.com/otp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/palette</loc>
+    <loc>https://tools.hollowdata.com/palette</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pandoc-convert</loc>
+    <loc>https://tools.hollowdata.com/pandoc-convert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/password</loc>
+    <loc>https://tools.hollowdata.com/password</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/password-strength</loc>
+    <loc>https://tools.hollowdata.com/password-strength</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pbkdf2</loc>
+    <loc>https://tools.hollowdata.com/pbkdf2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pdf-merge</loc>
+    <loc>https://tools.hollowdata.com/pdf-merge</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pdf-sign</loc>
+    <loc>https://tools.hollowdata.com/pdf-sign</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pdf-signature-checker</loc>
+    <loc>https://tools.hollowdata.com/pdf-signature-checker</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/percentage</loc>
+    <loc>https://tools.hollowdata.com/percentage</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/phone</loc>
+    <loc>https://tools.hollowdata.com/phone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pivot-table-advanced</loc>
+    <loc>https://tools.hollowdata.com/pivot-table-advanced</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/pivot-table-plus</loc>
+    <loc>https://tools.hollowdata.com/pivot-table-plus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/potrace</loc>
+    <loc>https://tools.hollowdata.com/potrace</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/punycode</loc>
+    <loc>https://tools.hollowdata.com/punycode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/qr-batch</loc>
+    <loc>https://tools.hollowdata.com/qr-batch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/qr-decode</loc>
+    <loc>https://tools.hollowdata.com/qr-decode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/qrcode</loc>
+    <loc>https://tools.hollowdata.com/qrcode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/random-number-generator</loc>
+    <loc>https://tools.hollowdata.com/random-number-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/random-port</loc>
+    <loc>https://tools.hollowdata.com/random-port</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/randomize-case</loc>
+    <loc>https://tools.hollowdata.com/randomize-case</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/regex-cheatsheet</loc>
+    <loc>https://tools.hollowdata.com/regex-cheatsheet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/regex-replace</loc>
+    <loc>https://tools.hollowdata.com/regex-replace</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/regex-tester</loc>
+    <loc>https://tools.hollowdata.com/regex-tester</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/repeat</loc>
+    <loc>https://tools.hollowdata.com/repeat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/responsive-preview</loc>
+    <loc>https://tools.hollowdata.com/responsive-preview</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/resvg</loc>
+    <loc>https://tools.hollowdata.com/resvg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/reverse</loc>
+    <loc>https://tools.hollowdata.com/reverse</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/roman</loc>
+    <loc>https://tools.hollowdata.com/roman</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/rot13</loc>
+    <loc>https://tools.hollowdata.com/rot13</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/rsa-keys</loc>
+    <loc>https://tools.hollowdata.com/rsa-keys</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/safelink</loc>
+    <loc>https://tools.hollowdata.com/safelink</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/slugify</loc>
+    <loc>https://tools.hollowdata.com/slugify</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/sprite</loc>
+    <loc>https://tools.hollowdata.com/sprite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/sql-format</loc>
+    <loc>https://tools.hollowdata.com/sql-format</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/string-obfuscator</loc>
+    <loc>https://tools.hollowdata.com/string-obfuscator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/sum</loc>
+    <loc>https://tools.hollowdata.com/sum</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/svg-placeholder</loc>
+    <loc>https://tools.hollowdata.com/svg-placeholder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/swap-csv-columns</loc>
+    <loc>https://tools.hollowdata.com/swap-csv-columns</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/tailwind-config</loc>
+    <loc>https://tools.hollowdata.com/tailwind-config</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/temperature</loc>
+    <loc>https://tools.hollowdata.com/temperature</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/text-binary</loc>
+    <loc>https://tools.hollowdata.com/text-binary</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/text-case</loc>
+    <loc>https://tools.hollowdata.com/text-case</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/text-diff</loc>
+    <loc>https://tools.hollowdata.com/text-diff</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/text-stats</loc>
+    <loc>https://tools.hollowdata.com/text-stats</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/text-unicode</loc>
+    <loc>https://tools.hollowdata.com/text-unicode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/time-between-dates</loc>
+    <loc>https://tools.hollowdata.com/time-between-dates</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/timestamp</loc>
+    <loc>https://tools.hollowdata.com/timestamp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/timezone</loc>
+    <loc>https://tools.hollowdata.com/timezone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/token</loc>
+    <loc>https://tools.hollowdata.com/token</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/tokenize</loc>
+    <loc>https://tools.hollowdata.com/tokenize</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/toml-json</loc>
+    <loc>https://tools.hollowdata.com/toml-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/toml-to-yaml</loc>
+    <loc>https://tools.hollowdata.com/toml-to-yaml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/transpose-csv</loc>
+    <loc>https://tools.hollowdata.com/transpose-csv</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/truncate-clock-time</loc>
+    <loc>https://tools.hollowdata.com/truncate-clock-time</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/tsv-to-json</loc>
+    <loc>https://tools.hollowdata.com/tsv-to-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/tts</loc>
+    <loc>https://tools.hollowdata.com/tts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/ulid</loc>
+    <loc>https://tools.hollowdata.com/ulid</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/unicode-visual</loc>
+    <loc>https://tools.hollowdata.com/unicode-visual</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/units</loc>
+    <loc>https://tools.hollowdata.com/units</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/url-dedupe</loc>
+    <loc>https://tools.hollowdata.com/url-dedupe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/url-encode</loc>
+    <loc>https://tools.hollowdata.com/url-encode</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/url-params</loc>
+    <loc>https://tools.hollowdata.com/url-params</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/url-parser</loc>
+    <loc>https://tools.hollowdata.com/url-parser</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/user-agent</loc>
+    <loc>https://tools.hollowdata.com/user-agent</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/utm-clean</loc>
+    <loc>https://tools.hollowdata.com/utm-clean</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/uuid</loc>
+    <loc>https://tools.hollowdata.com/uuid</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/uuid-plus</loc>
+    <loc>https://tools.hollowdata.com/uuid-plus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/validate-json</loc>
+    <loc>https://tools.hollowdata.com/validate-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/vcard-qr</loc>
+    <loc>https://tools.hollowdata.com/vcard-qr</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/vips</loc>
+    <loc>https://tools.hollowdata.com/vips</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/vtracer</loc>
+    <loc>https://tools.hollowdata.com/vtracer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/wifi-qr</loc>
+    <loc>https://tools.hollowdata.com/wifi-qr</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/wysiwyg</loc>
+    <loc>https://tools.hollowdata.com/wysiwyg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/xelatex</loc>
+    <loc>https://tools.hollowdata.com/xelatex</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/xml-format</loc>
+    <loc>https://tools.hollowdata.com/xml-format</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/xml-json</loc>
+    <loc>https://tools.hollowdata.com/xml-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/xml-validator</loc>
+    <loc>https://tools.hollowdata.com/xml-validator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/yaml-format</loc>
+    <loc>https://tools.hollowdata.com/yaml-format</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/yaml-json</loc>
+    <loc>https://tools.hollowdata.com/yaml-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/yaml-toml</loc>
+    <loc>https://tools.hollowdata.com/yaml-toml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/yaml-viewer</loc>
+    <loc>https://tools.hollowdata.com/yaml-viewer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/zero-width-clean</loc>
+    <loc>https://tools.hollowdata.com/zero-width-clean</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
